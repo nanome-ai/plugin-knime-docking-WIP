@@ -1992,3 +1992,274 @@ Constructed plugin menu
 I requested the complex list
 I ran the change_complex_list function
 Session 287 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 4 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 5 
+=======================================
+
+Registered new session: 8
+Plugin constructed for session 8
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+5CGC is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04452D30>
+<nanome.api.structure.complex.Complex object at 0x04452BB0> 
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp3yjba8vn
+
+
+ C:\Users\rober\AppData\Local\Temp\tmp3yjba8vn\ligandst518so3s.sdf C:\Users\rober\AppData\Local\Temp\tmp3yjba8vn\proteinm6kgv25i.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp3yjba8vn",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpvvbcrl5x",String
+The KNIME process has finished
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 6 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 7 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 8 
+=======================================
+
+Registered new session: 10
+Plugin constructed for session 10
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x040E2D30>
+<nanome.api.structure.complex.Complex object at 0x040E2BB0> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpxfafk9g4\protein809b6my_.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpxfafk9g4\ligandsv9jq35mt.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpxfafk9g4 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpxfafk9g4",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpum6l9kf7",String
+The KNIME process has finished
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 10 
+=======================================
+
+Registered new session: 10
+Plugin constructed for session 10
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03962D30>
+<nanome.api.structure.complex.Complex object at 0x03962BB0> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpbn6ne_br\proteinjt12wzaf.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpbn6ne_br\ligands_qpoi_i8.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpbn6ne_br 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpbn6ne_br",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpy7lpjr1h",String
+The KNIME process has finished
+I ran the change_complex_list function
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 15 
+=======================================
+
+Registered new session: 10
+Plugin constructed for session 10
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03B42DF0>
+<nanome.api.structure.complex.Complex object at 0x03B42C70> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmp3t8v9_p8\protein57d8qxas.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmp3t8v9_p8\ligands5lr_f0zo.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp3t8v9_p8 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp3t8v9_p8",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpvcj4yz_h",String
+The KNIME process has finished
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 16 
+=======================================
+
+Registered new session: 10
+Plugin constructed for session 10
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03882DF0>
+<nanome.api.structure.complex.Complex object at 0x03882C70> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5\proteinwknjielt.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5\ligandsbbl_zgj5.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpyad0_kpu",String
+
+ <nanome.api.structure.complex.Complex object at 0x03882DF0>
+<nanome.api.structure.complex.Complex object at 0x03882C70> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5\proteinwknjielt.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5\ligandsbbl_zgj5.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpxah0qlc5",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpyad0_kpu",String
+The KNIME process has finished
+I ran the change_complex_list function
+I ran the change_complex_list function
+Session 10 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 17 
+=======================================
+
+Registered new session: 11
+Plugin constructed for session 11
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03D82C70>
+<nanome.api.structure.complex.Complex object at 0x03D82DF0> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpfkibpvco\protein3jbwtcau.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpfkibpvco\ligandsgqtjl8tq.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpfkibpvco 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpfkibpvco",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmp1ueccbcw",String
+The KNIME process has finished
+I ran the change_complex_list function
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 18 
+=======================================
+
+Registered new session: 12
+Plugin constructed for session 12
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03CD2DF0>
+<nanome.api.structure.complex.Complex object at 0x03CD2C70> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmp24vx3azx\protein2empsc9u.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmp24vx3azx\ligandsss8j_sw_.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp24vx3azx 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp24vx3azx",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmp7mciw4ua",String
+The KNIME process has finished
+I ran the change_complex_list function
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 19 
+=======================================
+

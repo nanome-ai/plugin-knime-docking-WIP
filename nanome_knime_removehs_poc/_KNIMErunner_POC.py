@@ -21,12 +21,12 @@ class knime_runner():
         batch = "org.knime.product.KNIME_BATCH_APPLICATION" #constant
         workflowDir = r'-workflowDir="D:\knime-workspace\KNIME_remove_hydrogens"' #UPDATE!!
         preferences = r'-preferences="D:\knime-workspace\preferences.epf"' 
-        input_folder = r'-workflow.variable=input_folder,"{}",String'.format(self._plugin._input_directory)
+        input_folder = r'-workflow.variable=input_folder,"{}",String'.format(self._plugin._input_directory.name)
         Logs.debug(input_folder)
-        output_folder = r'-workflow.variable=output_file,"{}",String'.format(self._plugin._output_directory)
+        output_folder = r'-workflow.variable=output_folder,"{}",String'.format(self._plugin._output_directory.name)
         Logs.debug(output_folder) 
-        # bashCommand = [knime_exe, "-consoleLog", "-reset", "-nosplash", "-application", batch, workflowDir, preferences, input_folder, output_folder]
-        bashCommand = [knime_exe, "-nosave", "-reset", "-nosplash", "-application", batch, workflowDir, preferences, input_folder, output_folder]
+        bashCommand = [knime_exe, "-nosave", "-consoleLog", "-reset", "-nosplash", "-application", batch, workflowDir, preferences, input_folder, output_folder]
+        # bashCommand = [knime_exe, "-nosave", "-reset", "-nosplash", "-application", batch, workflowDir, preferences, input_folder, output_folder]
         bC = ' '.join(bashCommand)
 
         
@@ -36,8 +36,8 @@ class knime_runner():
         return self._knime_process.poll() != None
     
     def _workflow_finished(self):
-        ligand_results = nanome.structure.Complex.io.from_sdf(path=self._plugin._ligands_output)
-        protein_results = nanome.structure.Complex.io.from_sdf(path=self._plugin._protein_output)
+        ligand_results = nanome.structure.Complex.io.from_sdf(path=self._plugin._ligands_output.name)
+        protein_results = nanome.structure.Complex.io.from_sdf(path=self._plugin._protein_output.name)
         self._plugin.add_to_workspace([ligand_results, protein_results])
 
     def update(self):

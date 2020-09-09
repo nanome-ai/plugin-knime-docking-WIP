@@ -13,15 +13,19 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         
     def start(self):
         Logs.debug("I started")
-        # self._input_directory = tempfile.TemporaryDirectory()
-        # self._output_directory = tempfile.TemporaryDirectory()\
-        self.sdf_test = r"D:\knime-workspace\data\sdf_test\{}"
-        self._input_directory = r"D:\knime-workspace\data\sdf_test"
-        self._output_directory = r"D:\knime-workspace\data\sdf_test"
-        self._ligands_output = r"D:\knime-workspace\data\sdf_test\structure_0.sdf"
-        self._protein_output = r"D:\knime-workspace\data\sdf_test\structure_1.sdf"
-        # self._ligands_input = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
-        # self._protein_input = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
+
+        self._input_directory = tempfile.TemporaryDirectory()
+        self._output_directory = tempfile.TemporaryDirectory()
+        self._ligands_input = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
+        self._protein_input = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
+        self._ligands_output = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._output_directory.name)
+        self._protein_output = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._output_directory.name)
+        # self.sdf_test = r"D:\knime-workspace\data\sdf_test\{}"
+        # self._input_directory = r"D:\knime-workspace\data\sdf_test"
+        # self._output_directory = r"D:\knime-workspace\data\sdf_test"
+        # self._ligands_output = r"D:\knime-workspace\data\sdf_test\structure_0.sdf"
+        # self._protein_output = r"D:\knime-workspace\data\sdf_test\structure_1.sdf"
+
         self._menu = KNIMEmenu(self)
         self._runner = knime_runner(self)
         self._menu.build_menu() # The build_menu method from _KNIMEMenu_POC.py
@@ -69,11 +73,14 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
 ## This method expects only one ligand for now
     def save_files(self, complexes):
         protein, ligands = complexes[0], complexes[1]
-        protein.io.to_sdf(self.sdf_test.format("protein.sdf"), SDFOPTIONS)
-        ligands.io.to_sdf(self.sdf_test.format("ligand.sdf"), SDFOPTIONS)
-        # Logs.debug("complexes saved as .pdb files to the destination %s" % self._input_directory.name)
-        # Logs.debug("\n\n", self._ligands_input.name, self._protein_input.name, "\n\n")
+        protein.io.to_sdf(self._protein_input.name, SDFOPTIONS)
+        Logs.debug("Saved protein SDF", self._protein_input.name)
+        ligands.io.to_sdf(self._ligands_input.name, SDFOPTIONS)
+        Logs.debug("Saved ligands SDF", self._ligands_input.name)
+        Logs.debug("\ncomplexes saved as .pdb files to the destination %s \n" % self._input_directory.name)
+        
         Logs.message("I made it to the run_knime function!")
+        
         self._runner.run_knime()
 
     # def on_workspace_received(self, workspace):
@@ -85,7 +92,7 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
     #         count += 1
     #     Logs.debug(count, "complexes saved as .pdb files to the destination %s" % save_location)
     #     pass
-   
+    
     # Called every update tick of the Plugin
     def update(self):
         self._runner.update()
