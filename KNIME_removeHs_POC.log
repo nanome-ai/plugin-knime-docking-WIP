@@ -1,0 +1,1994 @@
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 923 
+=======================================
+
+Registered new session: 257
+Plugin constructed for session 257
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x7f69610596d0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x7f696103a5d0>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+I made it to handle_dropdown_pressed function!
+big_poppa is the value of the item
+I made it to the run_knime function!
+I made it to the knime_runner file!
+/mnt/d/KNIME/knime.exe -consoleLog -reset -noexit -nosplash -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir="D:\knime-workspace\pdb_property_extract" -workflow.variable=input_folder,"D:\Oculus_Downloads\Software\nanome-nanome\Build\Nanome_Data\Plugins\knime_plugin_test\pdb_temp",String -workflow.variable=output_file,"D:\knime-workspace\data\mothafuckin_plugin_test.csv",String
+Session 257 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 924 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 925 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 926 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 927 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 928 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 929 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 930 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 931 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 932 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 933 
+=======================================
+
+Registered new session: 258
+Plugin constructed for session 258
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x7faeebaef410>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x7faeec38a750>
+I ran the change_complex_list function
+Session 258 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 934 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 935 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 936 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 938 
+=======================================
+
+Registered new session: 260
+Plugin constructed for session 260
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x7ffbf83ca550>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x7ffbf8c65f50>
+I ran the change_complex_list function
+Session 260 disconnected
+Registered new session: 260
+Plugin constructed for session 260
+Starting plugin
+I started
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 260
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 939 
+=======================================
+
+Registered new session: 260
+Plugin constructed for session 260
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x7ff375f2d510>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x7ff375f0efd0>
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 942 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 943 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 261
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 944 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03B823D0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03B82280>
+I ran the change_complex_list function
+I made it to the run_knime function!
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 945 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03B823D0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03B82280>
+I ran the change_complex_list function
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 946 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03F823D0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03F82280>
+I ran the change_complex_list function
+I made it to the run_knime function!
+I made it to the knime_runner file!
+D:\KNIME\knime.exe -consoleLog -reset -noexit -nosplash -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir="D:\knime-workspace\pdb_property_extract" -workflow.variable=input_folder,"D:\Oculus_Downloads\Software\nanome-nanome\Build\Nanome_Data\Plugins\knime_plugin_test\pdb_temp",String -workflow.variable=output_file,"D:\knime-workspace\data\mothafuckin_plugin_test.csv",String
+Session 261 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 947 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 948 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03CC2508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03CC2340>
+I ran the change_complex_list function
+Connected to a new session!
+Connected to a new session!
+Connected to a new session!
+Connected to a new session!
+Connected to a new session!
+Connected to a new session!
+Session 261 disconnected
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x04442508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x04442340>
+I ran the change_complex_list function
+Session 261 disconnected
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03BC2508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03BC2340>
+I ran the change_complex_list function
+Session 261 disconnected
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03A72508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03A72340>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 949 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03A22508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03A22340>
+I ran the change_complex_list function
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 950 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x04042508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x04042340>
+I ran the change_complex_list function
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 951 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03E02508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03E02340>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+I made it to handle_dropdown_pressed function!
+big_poppa is the value of the item
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 952 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x036A1520>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x036A1358>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+I made it to handle_dropdown_pressed function!
+big_poppa is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmppo7a33j0
+
+
+ C:\Users\rober\AppData\Local\Temp\tmppo7a33j0\ligandsx6r76uho.sdf C:\Users\rober\AppData\Local\Temp\tmppo7a33j0\protein1cww_7xb.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+D:\KNIME\knime.exe -consoleLog -reset -noexit -nosplash -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir="D:\knime-workspace\pdb_property_extract" -workflow.variable=input_folder,"D:\Oculus_Downloads\Software\nanome-nanome\Build\Nanome_Data\Plugins\knime_plugin_test\pdb_temp",String -workflow.variable=output_file,"D:\knime-workspace\data\mothafuckin_plugin_test.csv",String
+Session 261 disconnected
+Registered new session: 261
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 953 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x04052508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x04052340>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpw554gti1
+
+
+ C:\Users\rober\AppData\Local\Temp\tmpw554gti1\ligands2ms9qyet.sdf C:\Users\rober\AppData\Local\Temp\tmpw554gti1\proteinz91nk2gd.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+D:\KNIME\knime.exe -consoleLog -reset -noexit -nosplash -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir="D:\knime-workspace\pdb_property_extract" -workflow.variable=input_folder,"D:\Oculus_Downloads\Software\nanome-nanome\Build\Nanome_Data\Plugins\knime_plugin_test\pdb_temp",String -workflow.variable=output_file,"D:\knime-workspace\data\mothafuckin_plugin_test.csv",String
+<tempfile._TemporaryFileWrapper object at 0x04052328>
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 954 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03922508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03922340>
+I ran the change_complex_list function
+Error: Plugin encountered an error
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03FB2508>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03FB2340>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpg51yx0f7
+
+
+ C:\Users\rober\AppData\Local\Temp\tmpg51yx0f7\ligandsma_r0bj7.sdf C:\Users\rober\AppData\Local\Temp\tmpg51yx0f7\proteinxpgcv_q_.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmpg51yx0f7\proteinxpgcv_q_.sdf
+D:\KNIME\knime.exe -consoleLog -reset -noexit -nosplash -application org.knime.product.KNIME_BATCH_APPLICATION -workflowDir="D:\knime-workspace\pdb_property_extract" -workflow.variable=input_folder,"D:\Oculus_Downloads\Software\nanome-nanome\Build\Nanome_Data\Plugins\knime_plugin_test\pdb_temp",String -workflow.variable=output_file,"D:\knime-workspace\data\mothafuckin_plugin_test.csv",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 955 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x037824D8>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03782310>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpvbb1842w
+
+
+ C:\Users\rober\AppData\Local\Temp\tmpvbb1842w\ligandsksfhhe2n.sdf C:\Users\rober\AppData\Local\Temp\tmpvbb1842w\proteindjahfnh7.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmpvbb1842w\proteindjahfnh7.sdf
+-workflow.variable=input_folder,"<TemporaryDirectory 'C:\\Users\\rober\\AppData\\Local\\Temp\\tmpvbb1842w'>",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 956 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03E624D8>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03E62310>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmps0kks6rx
+
+
+ C:\Users\rober\AppData\Local\Temp\tmps0kks6rx\ligands_vs58rdf.sdf C:\Users\rober\AppData\Local\Temp\tmps0kks6rx\proteincqtigh1y.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmps0kks6rx\proteincqtigh1y.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmps0kks6rx",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 957 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 958 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03A524A8>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03A522F8>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpbgmv95r_
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 959 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 960 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x040224D8>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x04022310>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp3yjsi2e2
+
+
+ C:\Users\rober\AppData\Local\Temp\tmp3yjsi2e2\ligandsqcj_doad.sdf C:\Users\rober\AppData\Local\Temp\tmp3yjsi2e2\proteinn8qod9jy.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmp3yjsi2e2\proteinn8qod9jy.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp3yjsi2e2",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpi4zfl8ms",String
+Session 261 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 961 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x037A24D8>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x037A2310>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp5llglylo
+
+
+ C:\Users\rober\AppData\Local\Temp\tmp5llglylo\ligandsrwv5mbhd.sdf C:\Users\rober\AppData\Local\Temp\tmp5llglylo\protein7rbb4lu8.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmp5llglylo\protein7rbb4lu8.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp5llglylo",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmp0f1kmeup",String
+Session 261 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 962 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x037E24F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x037E2328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpgrwhwsog
+
+
+ C:\Users\rober\AppData\Local\Temp\tmpgrwhwsog\ligandsnbo972mz.sdf C:\Users\rober\AppData\Local\Temp\tmpgrwhwsog\proteinfl28wu0_.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmpgrwhwsog\proteinfl28wu0_.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpgrwhwsog",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpnughumjc",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 963 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03B924F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03B92328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpuef9cqs_
+
+
+ C:\Users\rober\AppData\Local\Temp\tmpuef9cqs_\ligandswuzeasur.sdf C:\Users\rober\AppData\Local\Temp\tmpuef9cqs_\proteinhlnsyl2z.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmpuef9cqs_\proteinhlnsyl2z.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpuef9cqs_",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmp9mk1xfkc",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 964 
+=======================================
+
+Registered new session: 261
+Plugin constructed for session 261
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x038A24F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x038A2328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmphkeqo55u
+
+
+ C:\Users\rober\AppData\Local\Temp\tmphkeqo55u\ligands6_5d1oy6.sdf C:\Users\rober\AppData\Local\Temp\tmphkeqo55u\proteinl27az85_.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmphkeqo55u\proteinl27az85_.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmphkeqo55u",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpe7pcw92h",String
+Session 261 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 966 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x040D24F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x040D2328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6ASA is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp1qxas0vu
+
+
+ C:\Users\rober\AppData\Local\Temp\tmp1qxas0vu\ligands4hsm__ma.sdf C:\Users\rober\AppData\Local\Temp\tmp1qxas0vu\proteinve1ykh2_.sdf 
+
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmp1qxas0vu\proteinve1ykh2_.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp1qxas0vu",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmplwatiqai",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 967 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x040224F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x04022328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6ASA is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmphpwt_nih
+
+
+ C:\Users\rober\AppData\Local\Temp\tmphpwt_nih\ligandsn4lhqr2q.sdf C:\Users\rober\AppData\Local\Temp\tmphpwt_nih\protein7gzmjk6b.sdf 
+
+
+I made it to the run_knime function!
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 968 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x041D24F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x041D2328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6ASA is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp0cqiguq2
+
+
+ C:\Users\rober\AppData\Local\Temp\tmp0cqiguq2\ligandsmitshqy9.sdf C:\Users\rober\AppData\Local\Temp\tmp0cqiguq2\proteinqogklnxl.sdf 
+
+
+I made it to the run_knime function!
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 969 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 970 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 971 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x03A824F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x03A82328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6ASA is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp2uwbbpt7
+
+
+ C:\Users\rober\AppData\Local\Temp\tmp2uwbbpt7\ligandsil9mq18h.sdf C:\Users\rober\AppData\Local\Temp\tmp2uwbbpt7\proteinwobadjev.sdf 
+
+
+I made it to the run_knime function!
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 972 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x036C24F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x036C2328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6ASA is the value of the item
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpij9s2532
+
+
+ C:\Users\rober\AppData\Local\Temp\tmpij9s2532\ligandse3k82pup.sdf C:\Users\rober\AppData\Local\Temp\tmpij9s2532\proteintucbzdzg.sdf 
+
+
+I made it to the run_knime function!
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 973 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x043424F0>
+<nanome_knime_removehs_poc._KNIMEMenu_POC.KNIMEmenu object at 0x04342328>
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6ASA is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04342AD8>
+<nanome.api.structure.complex.Complex object at 0x04342C58> 
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpfti23ipj
+
+
+ C:\Users\rober\AppData\Local\Temp\tmpfti23ipj\ligandsjyegld7y.sdf C:\Users\rober\AppData\Local\Temp\tmpfti23ipj\proteinlco7kmuq.sdf 
+
+
+I made it to the run_knime function!
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 974 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 975 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+<nanome.api.ui.menu.Menu object at 0x045A24F0>
+Error: Plugin encountered an error
+Registered new session: 272
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 976 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 977 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 978 
+=======================================
+
+Registered new session: 272
+Plugin constructed for session 272
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 979 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 980 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 981 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 985 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 986 
+=======================================
+
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 275 disconnected
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+1H76 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04482B38>
+<nanome.api.structure.complex.Complex object at 0x04482CB8> 
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp4vh5mg0c
+
+
+ C:\Users\rober\AppData\Local\Temp\tmp4vh5mg0c\ligandslg57tpgv.sdf C:\Users\rober\AppData\Local\Temp\tmp4vh5mg0c\protein197jp7i6.sdf 
+
+
+I made it to the run_knime function!
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 987 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 988 
+=======================================
+
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+1H76 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04521B38>
+<nanome.api.structure.complex.Complex object at 0x04521CB8> 
+
+I made it to the knime_runner file!
+C:\Users\rober\AppData\Local\Temp\tmpapwxd_bh\proteinimp95j1f.sdf
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpapwxd_bh",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmpzrj7kkt5",String
+Exiting
+Error: Cannot deliver packet to plugin 275 Did it crash?
+Error: Cannot deliver packet to plugin 275 Did it crash?
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 14, in _read_from_plugin
+    has_net_data = self.__net_plugin_pipe.poll()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 255, in poll
+    self._check_closed()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 136, in _check_closed
+    raise OSError("handle is closed")
+OSError: handle is closed
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 989 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 990 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 991 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 992 
+=======================================
+
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+1H76 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03ED2A78>
+<nanome.api.structure.complex.Complex object at 0x03ED2BF8> 
+
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 275
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 993 
+=======================================
+
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+1H76 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03AC2A78>
+<nanome.api.structure.complex.Complex object at 0x03AC2BF8> 
+
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpnu4bcyl0",String
+-workflow.variable=output_file,"C:\Users\rober\AppData\Local\Temp\tmp5bjwljl4",String
+Error: Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 70, in _run
+    while self._network._receive() and self._process_manager.update():
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 86, in _receive
+    callback(self, received_object, request_id)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_commands\_callbacks\_complex_list.py", line 5, in _receive_complexes
+    network._call(request_id, arg)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_process_network.py", line 29, in _call
+    self._plugin._call(request_id, *args)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_plugin_instance.py", line 31, in _call
+    callbacks[id](*args)
+  File "C:\Users\rober\GitHub\plugin-knimeRemoveHs-windows\nanome_knime_removehs_poc\KNIME_removeHs_POC.py", line 69, in save_files
+    protein.io.to_sdf(os.path.join(self._input_directory, "protein.sdf"), SDFOPTIONS)
+  File "C:\Program Files (x86)\Python38-32\lib\ntpath.py", line 78, in join
+    path = os.fspath(path)
+TypeError: expected str, bytes or os.PathLike object, not TemporaryDirectory
+
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 15, in _read_from_plugin
+    has_proc_data = self.__proc_plugin_pipe.poll()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 994 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 995 
+=======================================
+
+Registered new session: 275
+Plugin constructed for session 275
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 996 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 997 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 998 
+=======================================
+
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+1H76 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x035819A0>
+<nanome.api.structure.complex.Complex object at 0x03581B20> 
+
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test\",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test\",String
+Exiting
+Error: Cannot deliver packet to plugin 275 Did it crash?
+Error: Cannot deliver packet to plugin 275 Did it crash?
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 14, in _read_from_plugin
+    has_net_data = self.__net_plugin_pipe.poll()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 255, in poll
+    self._check_closed()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 136, in _check_closed
+    raise OSError("handle is closed")
+OSError: handle is closed
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 999 
+=======================================
+
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+1H76 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x042B29A0>
+<nanome.api.structure.complex.Complex object at 0x042B2B20> 
+
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+I made it to the run_knime function!
+Session 275 disconnected
+Registered new session: 275
+Plugin constructed for session 275
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+1H76 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x041529A0>
+<nanome.api.structure.complex.Complex object at 0x04152B20> 
+
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Error: Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_net_instance.py", line 66, in receive
+    data = self._connection.recv(4096)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Trying to reconnect...
+Error: Cannot connect to plugin server at plugins.nanome.ai 9999 [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+Trying to reconnect...
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 988 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_net_instance.py", line 66, in receive
+    data = self._connection.recv(4096)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Trying to reconnect...
+Error: Cannot connect to plugin server at plugins.nanome.ai 9999 [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+Trying to reconnect...
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 998 
+=======================================
+
+Error: Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_net_instance.py", line 66, in receive
+    data = self._connection.recv(4096)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Trying to reconnect...
+Connected to server plugins.nanome.ai 9999
+Error: Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_net_instance.py", line 66, in receive
+    data = self._connection.recv(4096)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+Trying to reconnect...
+Connected to server plugins.nanome.ai 9999
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1030 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x044C29A0>
+<nanome.api.structure.complex.Complex object at 0x044C2B20> 
+
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Exiting
+Error: Cannot deliver packet to plugin 287 Did it crash?
+Error: Cannot deliver packet to plugin 287 Did it crash?
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 14, in _read_from_plugin
+    has_net_data = self.__net_plugin_pipe.poll()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 255, in poll
+    self._check_closed()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 136, in _check_closed
+    raise OSError("handle is closed")
+OSError: handle is closed
+
+Warning: Received a command from an unregistered session 287
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1031 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1032 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1033 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03FA29A0>
+<nanome.api.structure.complex.Complex object at 0x03FA2B20> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Session 287 disconnected
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 287 disconnected
+Session 287 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1034 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x045C19A0>
+<nanome.api.structure.complex.Complex object at 0x045C1B20> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1035 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x040919A0>
+<nanome.api.structure.complex.Complex object at 0x04091B20> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1036 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1037 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x042F19A0>
+<nanome.api.structure.complex.Complex object at 0x042F1B20> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1038 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1039 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1041 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1042 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x037429A0>
+<nanome.api.structure.complex.Complex object at 0x03742B20> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1045 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1046 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x044119A0>
+<nanome.api.structure.complex.Complex object at 0x04411B20> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1047 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1048 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1049 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1050 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1051 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1052 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 287
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1053 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 287
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1054 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 287
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1055 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1056 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 287
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1057 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 287
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1058 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x041A1A00>
+<nanome.api.structure.complex.Complex object at 0x041A1B80> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1059 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x044F2A00>
+<nanome.api.structure.complex.Complex object at 0x044F2B80> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+The KNIME process has finished
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1060 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x043A29E8>
+<nanome.api.structure.complex.Complex object at 0x043A2B68> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+The KNIME process has finished
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1063 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1064 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1065 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 287 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1066 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x039B2A00>
+<nanome.api.structure.complex.Complex object at 0x039B2B80> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+The KNIME process has finished
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1067 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1068 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 287 disconnected
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04532A00>
+<nanome.api.structure.complex.Complex object at 0x04532B80> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+The KNIME process has finished
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1069 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1070 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 287 disconnected
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x044D1A00>
+<nanome.api.structure.complex.Complex object at 0x044D1B80> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+Session 287 disconnected
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1071 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03672A00>
+<nanome.api.structure.complex.Complex object at 0x03672B80> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+The KNIME process has finished
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1073 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1074 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1075 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1076 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04362A00>
+<nanome.api.structure.complex.Complex object at 0x04362B80> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+The KNIME process has finished
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1077 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1078 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1079 
+=======================================
+
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 287 disconnected
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 287 disconnected
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+6LU7 is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04202A18>
+<nanome.api.structure.complex.Complex object at 0x04202B98> 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"D:\knime-workspace\data\sdf_test",String
+-workflow.variable=output_file,"D:\knime-workspace\data\sdf_test",String
+The KNIME process has finished
+I ran the change_complex_list function
+I ran the change_complex_list function
+Session 287 disconnected
+Registered new session: 287
+Plugin constructed for session 287
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Session 287 disconnected
