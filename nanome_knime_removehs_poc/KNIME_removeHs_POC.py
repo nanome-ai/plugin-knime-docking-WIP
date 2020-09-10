@@ -18,8 +18,8 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self._output_directory = tempfile.TemporaryDirectory()
         self._ligands_input = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
         self._protein_input = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
-        self._ligands_output = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._output_directory.name)
-        self._protein_output = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._output_directory.name)
+        # self._ligands_output = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._output_directory.name)
+        # self._protein_output = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._output_directory.name)
         # self.sdf_test = r"D:\knime-workspace\data\sdf_test\{}"
         # self._input_directory = r"D:\knime-workspace\data\sdf_test"
         # self._output_directory = r"D:\knime-workspace\data\sdf_test"

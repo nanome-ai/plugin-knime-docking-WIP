@@ -1,6 +1,7 @@
 import subprocess
 from nanome.util import Logs
 import nanome
+import os
 
 
 
@@ -36,9 +37,14 @@ class knime_runner():
         return self._knime_process.poll() != None
     
     def _workflow_finished(self):
-        ligand_results = nanome.structure.Complex.io.from_sdf(path=self._plugin._ligands_output.name)
-        protein_results = nanome.structure.Complex.io.from_sdf(path=self._plugin._protein_output.name)
-        self._plugin.add_to_workspace([ligand_results, protein_results])
+        self.workflow_results = []
+        for item in os.listdir(self._plugin._output_directory.name):
+            Logs.debug(item)
+            if item.lower().endswith('.sdf'):
+                Logs.debug("we got one boys")
+                self.workflow_results.append(nanome.structure.Complex.io.from_sdf(path=os.path.join(self._plugin._output_directory.name, item)))
+        Logs.debug(len(self.workflow_results))
+        self._plugin.add_to_workspace(self.workflow_results)
 
     def update(self):
         if self._knime_process and self._check_knime():
