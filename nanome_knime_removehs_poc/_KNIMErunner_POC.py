@@ -2,6 +2,7 @@ import subprocess
 from nanome.util import Logs
 import nanome
 import os
+import shutil
 
 
 
@@ -42,10 +43,16 @@ class knime_runner():
             Logs.debug(item)
             if item.lower().endswith('.sdf'):
                 Logs.debug("we got one boys")
-                self.workflow_results.append(nanome.structure.Complex.io.from_sdf(path=os.path.join(self._plugin._output_directory.name, item)))
+                source = os.path.join(self._plugin._output_directory.name, item)
+                destination = os.path.join(self._plugin._save_location, item)
+                if self._plugin._save_location:
+                    shutil.copyfile(source, destination)
+                self.workflow_results.append(nanome.structure.Complex.io.from_sdf(path=source))
         Logs.debug(len(self.workflow_results))
         self._plugin.add_to_workspace(self.workflow_results)
-
+        #self._plugin._input_directory.cleanup()
+        #self._plugin._output_directory.cleanup()
+ 
     def update(self):
         if self._knime_process and self._check_knime():
             Logs.debug("The KNIME process has finished")
