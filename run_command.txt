@@ -1,0 +1,1 @@
+python run.py -a plugins.nanome.ai -p 9999 -r -v --wkflw_dir=D:\knime-workspace\KNIME_remove_hydrogens --grid_dir=D:\COMPCHEM\docking-grids --output_dir D:\knime-workspace\data\sdf_test
