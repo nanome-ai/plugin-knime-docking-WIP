@@ -20,8 +20,8 @@ class knime_runner():
         ##VARIABLES FOR KNIME RUN##
         #must enter the path to computer's knime.exe file below#
         knime_exe = r'D:\KNIME\knime.exe' #UPDATE!!
-        batch = "org.knime.product.KNIME_BATCH_APPLICATION" #constant
-        workflowDir = r'-workflowDir="D:\knime-workspace\KNIME_remove_hydrogens"' #UPDATE!!
+        BATCH = "org.knime.product.KNIME_BATCH_APPLICATION"
+        workflowDir = self._plugin._workflow_dir
         preferences = r'-preferences="D:\knime-workspace\preferences.epf"' 
         input_folder = r'-workflow.variable=input_folder,"{}",String'.format(self._plugin._input_directory.name)
         Logs.debug(input_folder)

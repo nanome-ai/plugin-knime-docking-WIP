@@ -6,9 +6,6 @@ from functools import partial
 from pathlib import Path
 import os
 
-grid_folder = r'D:\COMPCHEM\docking_grids'        
-
-
 class KNIMEmenu():
     def __init__(self, knime_plugin):
         self.menu = knime_plugin.menu
@@ -17,6 +14,7 @@ class KNIMEmenu():
         self._selected_ligands = []
         self._selected_grid = None
         self._run_button = None
+        self.grid_folder = self._plugin._grid_dir
     
     def _request_refresh(self):
         self._plugin.request_refresh()

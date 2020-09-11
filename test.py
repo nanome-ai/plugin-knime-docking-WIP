@@ -15,4 +15,3 @@ def main():
     plugin.set_plugin_class(KNIME_removeHs_POC)
     plugin.run('plugins.nanome.ai', 9999)
 
-    python run.py -a plugins.nanome.ai -p 9999 -r -v --wkflw_dir=test --grid_dir=test --output_dir test
