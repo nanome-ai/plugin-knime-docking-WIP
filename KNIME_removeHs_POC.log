@@ -2448,3 +2448,572 @@ Connected to server plugins.nanome.ai 9999
 Registered with plugin ID 43 
 =======================================
 
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 44 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 45 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 46 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 47 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 48 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 50 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 51 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 54 
+=======================================
+
+Exiting
+Error: Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_net_instance.py", line 66, in receive
+    data = self._connection.recv(4096)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1226, in recv
+    return self.read(buflen)
+  File "C:\Program Files (x86)\Python38-32\lib\ssl.py", line 1101, in read
+    return self._sslobj.read(len)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_plugin.py", line 266, in __on_termination_signal
+    self.__exit()
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_plugin.py", line 275, in __exit
+    sys.exit(0)
+SystemExit: 0
+
+Trying to reconnect...
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 51 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 55 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 56 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 57 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 58 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 59 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 60 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 61 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 62 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 63 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 64 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 65 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 66 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 67 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 68 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 69 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 70 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 71 
+=======================================
+
+Warning: Debug used before plugin start.
+{'wkflw_dir': ['test'], 'grid_dir': ['test'], 'output_dir': ['test']}
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 72 
+=======================================
+
+Warning: Debug used before plugin start.
+{'wkflw_dir': ['test'], 'grid_dir': ['test'], 'output_dir': ['test']}
+Connected to server plugins.nanome.ai 8888
+Registered with plugin ID 11 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 8888
+Registered with plugin ID 13 
+=======================================
+
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 94 
+=======================================
+
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 95 
+=======================================
+
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 96 
+=======================================
+
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 97 
+=======================================
+
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 98 
+=======================================
+
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 99 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 100 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+I started
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 40
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+I started
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 40
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+I started
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 40
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 101 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Warning: Debug used before plugin start.
+
+ fuck me 
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 102 
+=======================================
+
+
+ fuck me 
+
+
+ testing hello 
+
+{'a': 'plugins.nanome.ai', 'p': '9999', 'k': None, 'n': None, 'v': None, 'r': None, 'auto_reload': None, 'ignore': None, 'wkflw_dir': ['test'], 'grid_dir': ['test'], 'output_dir': ['test']}
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 103 
+=======================================
+
+{'a': 'plugins.nanome.ai', 'p': '9999', 'k': None, 'n': None, 'v': None, 'r': None, 'auto_reload': None, 'ignore': None, 'wkflw_dir': ['test'], 'grid_dir': ['test'], 'output_dir': ['test']}
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 104 
+=======================================
+
+{'a': 'plugins.nanome.ai', 'p': '9999', 'k': None, 'n': None, 'v': None, 'r': None, 'auto_reload': None, 'ignore': None, 'wkflw_dir': ['test'], 'grid_dir': ['test'], 'output_dir': ['D:\\knime-workspace\\data\\sdf_test']}
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 105 
+=======================================
+
+{'a': 'plugins.nanome.ai', 'p': '9999', 'k': None, 'n': None, 'v': None, 'r': None, 'auto_reload': None, 'ignore': None, 'wkflw_dir': ['test'], 'grid_dir': ['test'], 'output_dir': ['D:\\knime-workspace\\data\\sdf_test']}
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 106 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 107 
+=======================================
+
+{'a': 'plugins.nanome.ai', 'p': '9999', 'k': None, 'n': None, 'v': None, 'r': None, 'auto_reload': None, 'ignore': None, 'wkflw_dir': ['test'], 'grid_dir': ['test'], 'output_dir': ['D:\\knime-workspace\\data\\sdf_test']}
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 108 
+=======================================
+
+{'a': 'plugins.nanome.ai', 'p': '9999', 'k': None, 'n': None, 'v': None, 'r': None, 'auto_reload': None, 'ignore': None, 'wkflw_dir': ['D:\\knime-workspace\\KNIME_remove_hydrogens'], 'grid_dir': ['D:\\COMPCHEM\\docking-grids'], 'output_dir': ['D:\\knime-workspace\\data\\sdf_test']}
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 109 
+=======================================
+
+{'a': 'plugins.nanome.ai', 'p': '9999', 'k': None, 'n': None, 'v': None, 'r': None, 'auto_reload': None, 'ignore': None, 'wkflw_dir': ['D:\\knime-workspace\\KNIME_remove_hydrogens'], 'grid_dir': ['D:\\COMPCHEM\\docking-grids'], 'output_dir': ['D:\\knime-workspace\\data\\sdf_test']}
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 110 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 111 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+I started
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 112 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 113 
+=======================================
+
+Registered new session: 40
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 14, in _read_from_plugin
+    has_net_data = self.__net_plugin_pipe.poll()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Registered new session: 40
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 114 
+=======================================
+
+Registered new session: 40
+Error: Plugin encountered an error, please check the logs. Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\nanome\_internal\_network\_session.py", line 14, in _read_from_plugin
+    has_net_data = self.__net_plugin_pipe.poll()
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 257, in poll
+    return self._poll(timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\multiprocessing\connection.py", line 328, in _poll
+    _winapi.PeekNamedPipe(self._handle)[0] != 0):
+BrokenPipeError: [WinError 109] The pipe has been ended
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 115 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 116 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 117 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 118 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Error: Plugin encountered an error
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 119 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+['D:\\knime-workspace\\data\\sdf_test'] ['D:\\COMPCHEM\\docking-grids'] ['D:\\knime-workspace\\KNIME_remove_hydrogens']
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 120 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking-grids D:\knime-workspace\KNIME_remove_hydrogens
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I ran the change_complex_list function
+I ran the change_complex_list function
+Session 40 disconnected
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking-grids D:\knime-workspace\KNIME_remove_hydrogens
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03EC5D00>
+<nanome.api.structure.complex.Complex object at 0x03EC5B80> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpb80ndrox\protein01z5ojak.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpb80ndrox\ligands4vvv_65a.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpb80ndrox 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpb80ndrox",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmpumxiqx_0",String
+The KNIME process has finished
+structure_0.sdf
+we got one boys
+structure_1.sdf
+we got one boys
+2
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 40
+Warning: Received a command from an unregistered session 40
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 121 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking-grids D:\knime-workspace\KNIME_remove_hydrogens
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+I ran the change_complex_list function
+I ran the change_complex_list function
+
+ <nanome.api.structure.complex.Complex object at 0x03DD5D00>
+<nanome.api.structure.complex.Complex object at 0x03DD5B80> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpnhdkdbnx\proteinbsnmfg2l.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpnhdkdbnx\ligands4p3garxh.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpnhdkdbnx 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpnhdkdbnx",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmplk0yt994",String
+The KNIME process has finished
+structure_0.sdf
+we got one boys
+structure_1.sdf
+we got one boys
+2
+I ran the change_complex_list function
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 122 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking-grids D:\knime-workspace\KNIME_remove_hydrogens
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x04075D18>
+<nanome.api.structure.complex.Complex object at 0x04075B98> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmp_mhj52ox\proteinhmsiofa1.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmp_mhj52ox\ligands_0gjz9w1.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp_mhj52ox 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp_mhj52ox",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmpuuwnnc5a",String
+The KNIME process has finished
+structure_0.sdf
+we got one boys
+structure_1.sdf
+we got one boys
+2
+Error: Plugin encountered an error
+Warning: Received a command from an unregistered session 40
+Warning: Received a command from an unregistered session 40
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 123 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 124 
+=======================================
+
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 125 
+=======================================
+
+Registered new session: 40
+Plugin constructed for session 40
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking-grids D:\knime-workspace\KNIME_remove_hydrogens
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+Constructed plugin menu
+I requested the complex list
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+
+ <nanome.api.structure.complex.Complex object at 0x03BC5D00>
+<nanome.api.structure.complex.Complex object at 0x03BC5B80> 
+
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpjnjnfunq\protein8e_ggq5b.sdf
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpjnjnfunq\ligandswc244ehg.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpjnjnfunq 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpjnjnfunq",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmppxnpuqd1",String
+The KNIME process has finished
+structure_0.sdf
+we got one boys
+structure_1.sdf
+we got one boys
+2
+I ran the change_complex_list function
+I ran the change_complex_list function
