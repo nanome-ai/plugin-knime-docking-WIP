@@ -132,7 +132,9 @@ class KNIMEmenu():
                 self._selected_grid = None
                 item.selected = False
             if self._selected_grid:
+                Logs.debug(self._selected_grid)
                 self._grid_dropdown.use_permanent_title = False
+                self._grid_dropdown.permanent_title = item._name
             else:
                 self._grid_dropdown.use_permanent_title = True
                 self._grid_dropdown.permanent_title = "None"

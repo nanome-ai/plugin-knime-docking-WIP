@@ -65,8 +65,12 @@ class knime_runner():
 
         Logs.debug(len(self.workflow_results))
         self._plugin.add_to_workspace(self.workflow_results)
-        #self._plugin._input_directory.cleanup()
-        #self._plugin._output_directory.cleanup()
+        
+        os.close(self._plugin._protein_input.fileno())
+        os.close(self._plugin._ligands_input.fileno())
+
+        shutil.rmtree(self._plugin._input_directory.name, ignore_errors=True)
+        shutil.rmtree(self._plugin._output_directory.name, ignore_errors= True)
  
     def update(self):
         if self._knime_process and self._check_knime():

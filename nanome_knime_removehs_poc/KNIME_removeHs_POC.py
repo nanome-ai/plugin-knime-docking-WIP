@@ -27,6 +27,7 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
             delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
         self._protein_input = tempfile.NamedTemporaryFile(
             delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
+        Logs.debug('\n', self._protein_input.fileno(), '\n')
         # self._ligands_output = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._output_directory.name)
         # self._protein_output = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._output_directory.name)
         # self.sdf_test = r"D:\knime-workspace\data\sdf_test\{}"
@@ -87,6 +88,9 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         Logs.debug(protein, "\n")
         request_list = [protein.index, ligands.index]
         self.request_complexes(request_list, self.save_files) #self.save_files is the callback function, activated when complexes are received
+
+    def on_stop(self):
+        Logs.debug("I STOPPED")
 
 
 # This method expects only one ligand for now
