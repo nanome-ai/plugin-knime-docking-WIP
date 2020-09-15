@@ -41,6 +41,11 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self.request_complex_list(self.on_complex_list_received)
         self._menu.populate_grid_dropdown()
         Logs.debug("I requested the complex list")
+
+        self._protein, self._ligands = None, None
+
+        self._running = False
+        self._ran = False
         
 
     def on_complex_list_received(self, complexes):
@@ -74,36 +79,31 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
 #   _KNIMErunner.py script.
 # ##
     def run_workflow(self):
+        self._running = True
+        self._menu.make_plugin_usable(False)
         ligands = self._menu.get_ligands()
         Logs.debug("\n", ligands)
         protein = self._menu.get_protein()
         Logs.debug(protein, "\n")
         request_list = [protein.index, ligands.index]
-        self.request_complexes(request_list, self.save_files)
+        self.request_complexes(request_list, self.save_files) #self.save_files is the callback function, activated when complexes are received
+
 
 # This method expects only one ligand for now
     def save_files(self, complexes):
-        protein, ligands = complexes[0], complexes[1]
-        protein.io.to_sdf(self._protein_input.name, SDFOPTIONS)
-        Logs.debug("Saved protein SDF", self._protein_input.name)
-        ligands.io.to_sdf(self._ligands_input.name, SDFOPTIONS)
+        self._protein, self._ligands = complexes[0], complexes[1] # we expect this order based on the request list defined in run_workflow method
+        Logs.debug("ligand - positon:", self._ligands.position, "rotation,", self._ligands.rotation)
+        Logs.debug("protein - positon:", self._protein.position, "rotation,", self._protein.rotation)
+        self._ligands.io.to_sdf(self._ligands_input.name, SDFOPTIONS)
         Logs.debug("Saved ligands SDF", self._ligands_input.name)
+        self._protein.io.to_sdf(self._protein_input.name, SDFOPTIONS) 
+        Logs.debug("Saved protein SDF", self._protein_input.name)
         Logs.debug("\ncomplexes saved as .pdb files to the destination %s \n" %
                    self._input_directory.name)
 
         Logs.message("I made it to the run_knime function!")
 
         self._runner.run_knime()
-
-    # def on_workspace_received(self, workspace):
-    #     count = 0
-    #     for complex in workspace.complexes:
-    #         save_location = self.input_directory.name + ("/%s.pdb" % complex.name)
-    #         complex.io.to_pdb(save_location, PDBOPTIONS)
-    #         Logs.message(complex.name, "complex registered")
-    #         count += 1
-    #     Logs.debug(count, "complexes saved as .pdb files to the destination %s" % save_location)
-    #     pass
 
     # Called every update tick of the Plugin
     def update(self):

@@ -3,7 +3,7 @@ from nanome.util import Logs
 from nanome.util import Color
 from nanome.api.ui import Dropdown,DropdownItem
 from functools import partial
-from pathlib import Path
+import pathlib
 import os
 
 class KNIMEmenu():
@@ -14,7 +14,9 @@ class KNIMEmenu():
         self._selected_ligands = []
         self._selected_grid = None
         self._run_button = None
-        self.grid_folder = self._plugin._grid_dir
+        self._grid_folder = self._plugin._grid_dir
+        self._run_button = None
+        self._no_reset = False
     
     def _request_refresh(self):
         self._plugin.request_refresh()
@@ -23,15 +25,18 @@ class KNIMEmenu():
     def _run_workflow(self):
         self._plugin.run_workflow()
 
+
 ## Appropriating functions from Muzhou's docking plugin ##
 
 # Get complex data from Nanome workspace
     def populate_protein_ligand_dropdown(self, complex_list):
 
-        # if self._no_reset:
-        #     self._no_reset = False
-        # else:
-        #     self.reset(update_menu=False)
+        Logs.debug("calling reset from change_complex_list")
+
+        if self._no_reset:
+            self._no_reset = False
+        else:
+            self.reset(update_menu=False)
 
 
         ## Populate the ligand and protein dropdown lists with loaded complexes ##
@@ -60,7 +65,7 @@ class KNIMEmenu():
     def populate_grid_dropdown(self):
         ## Update the Docking Grid dropdown with files from grid folder ##
         grid_list = []
-        for filename in os.listdir(grid_folder):
+        for filename in os.listdir(self._grid_folder):
             grid_dd_item = DropdownItem()
             grid_dd_item._name = os.path.splitext(filename)[0]
             grid_list.append(grid_dd_item)
@@ -133,7 +138,7 @@ class KNIMEmenu():
                 self._grid_dropdown.permanent_title = "None"
 
         #self.update_icons()
-        #self.refresh_run_btn_unusable()
+        self.refresh_run_btn_unusable()
         self._plugin.update_menu(self._menu)
  
 # Only handles one ligand for now. For implementations of KNIME plugins with multiple ligands, the
@@ -153,6 +158,54 @@ class KNIMEmenu():
             return None
         return self._selected_protein
 
+    def make_plugin_usable(self, state=True):
+        self._run_button.unusable = (not state) | self.refresh_run_btn_unusable(update = False)
+        self._plugin.update_content(self._run_button)
+        
+    def refresh_run_btn_unusable(self, update=True,after = False):
+        grid_requirement_met = self._selected_grid != None 
+        Logs.debug("selected protein is: ",self._selected_protein)
+        Logs.debug("selected ligand is: ",self._selected_ligands)
+        Logs.debug("selected grid is: ",self._selected_grid)
+        Logs.debug("after is: ",after)
+        if self._selected_protein != None and len(self._selected_ligands) > 0 and grid_requirement_met and self._plugin._running:
+            Logs.debug("run button unusable case 1")
+            self._grid_dropdown.use_permanent_title = True
+            self._run_button.text.value_unusable = "Running..."
+            self._run_button.unusable = False
+        elif self._selected_protein != None and len(self._selected_ligands) > 0 and grid_requirement_met and not self._plugin._running:
+            Logs.debug("run button unusable case 3")
+            self._grid_dropdown.use_permanent_title = True
+            self._run_button.text.value_unusable = "Run"
+            self._run_button.unusable = False
+        else:
+            Logs.debug('run button unusable case 2')
+            self._grid_dropdown.use_permanent_title = True
+            self._run_button.text.value_unusable = "Run"
+            self._run_button.unusable = True
+        if update:
+            self._plugin.update_content(self._run_button)
+
+        return self._run_button.unusable
+
+    def reset(self, update_menu=True):
+        Logs.debug('reset called')
+        self._selected_grid = None
+        self._selected_ligands = []
+        self._selected_protein = None
+        
+        self.make_plugin_usable()
+        self._plugin.update_menu(self._menu)
+
+    def clear_dropdown(self, dropdown):
+        dropdown.use_permanent_title = True
+        dropdown.permanent_title = "None"
+    
+    def set_all_dropdowns_to_none(self):
+        dropdown_list = [self._ligand_dropdown, self._protein_dropdown, self._grid_dropdown]
+        for dropdown in dropdown_list:
+            self.clear_dropdown(dropdown)
+    
 # I guess everything that happens (interactions w/menu) are handled in this function
     def build_menu(self):
         # import the json file of the new UI
@@ -166,15 +219,15 @@ class KNIMEmenu():
 
         # Populate the empty dropdown nodes on the menu with /dropdown/ content
         # Needed because stack studio currently does not support dropdown content
-        #Ligand
+        #Ligand dropdown
         self._ligand_dropdown = menu.root.find_node("LigandDropdown").add_new_dropdown()
         self._ligand_dropdown.use_permanent_title = True
         self._ligand_dropdown.permanent_title = "None"
-        #Protein
+        #Protein dropdown
         self._protein_dropdown = menu.root.find_node("ComplexDropdown").add_new_dropdown()
         self._protein_dropdown.use_permanent_title = True
         self._protein_dropdown.permanent_title = "None"
-        #GLIDE grid
+        #GLIDE grid dropdown
         self._grid_dropdown = menu._root.find_node("GridDropdown").add_new_dropdown()
         self._grid_dropdown.use_permanent_title = True
         self._grid_dropdown.permanent_title = "None"
@@ -185,6 +238,7 @@ class KNIMEmenu():
         run_button.register_pressed_callback(run_button_pressed_callback)
         self._run_button = run_button
         self._run_button.enabled = False
+        self.refresh_run_btn_unusable()
 
         # Update the menu
         self._menu = menu
