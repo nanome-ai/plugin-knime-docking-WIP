@@ -8,6 +8,7 @@ from ._KNIMEMenu_POC import KNIMEmenu
 from ._KNIMErunner_POC import knime_runner
 import sys
 import argparse
+import shutil
 
 SDFOPTIONS = nanome.api.structure.Complex.io.SDFSaveOptions()
 
@@ -21,13 +22,7 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self._save_location = arg_dict['output_dir'][0]
         Logs.debug(self._save_location, self._grid_dir, self._workflow_dir)
 
-        self._input_directory = tempfile.TemporaryDirectory()
-        self._output_directory = tempfile.TemporaryDirectory()
-        self._ligands_input = tempfile.NamedTemporaryFile(
-            delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
-        self._protein_input = tempfile.NamedTemporaryFile(
-            delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
-        Logs.debug('\n', self._protein_input.fileno(), '\n')
+        
         # self._ligands_output = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._output_directory.name)
         # self._protein_output = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._output_directory.name)
         # self.sdf_test = r"D:\knime-workspace\data\sdf_test\{}"
@@ -80,6 +75,7 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
 #   _KNIMErunner.py script.
 # ##
     def run_workflow(self):
+        self.make_temp_files()
         self._running = True
         self._menu.make_plugin_usable(False)
         ligands = self._menu.get_ligands()
@@ -92,6 +88,26 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
     def on_stop(self):
         Logs.debug("I STOPPED")
 
+    def make_temp_files(self):
+        self._input_directory = tempfile.TemporaryDirectory()
+        self._output_directory = tempfile.TemporaryDirectory()
+        self._ligands_input = tempfile.NamedTemporaryFile(
+            delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
+        Logs.debug('\nfile descriptor ligand is', self._ligands_input.fileno(), '\n')
+        self._protein_input = tempfile.NamedTemporaryFile(
+            delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
+        Logs.debug('\nfile descriptor protein is', self._protein_input.fileno(), '\n')
+
+    def cleanup_temp_files(self):
+        for file in [self._protein_input, self._ligands_input]:
+            try:
+                Logs.debug('\nfile descriptor is', file.fileno())
+                os.close(file.fileno())
+            except OSError:
+                Logs.debug('\nfile already closed')
+        
+        shutil.rmtree(self._input_directory.name, ignore_errors=True)
+        shutil.rmtree(self._output_directory.name, ignore_errors= True)
 
 # This method expects only one ligand for now
     def save_files(self, complexes):
