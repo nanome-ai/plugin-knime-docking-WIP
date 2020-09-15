@@ -8614,3 +8614,211 @@ Connected to server plugins.nanome.ai 9999
 Registered with plugin ID 825 
 =======================================
 
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 827 
+=======================================
+
+Registered new session: 64
+Plugin constructed for session 64
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking_grids D:\knime-workspace\KNIME_remove_hydrogens
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+Warning: Function value_unusable is deprecated. Try using value.unusable instead. 
+Constructed plugin menu
+I requested the complex list
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+selected protein is:  None
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x04096A78>]
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x04096C28>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x04096A78>]
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I made it to handle_dropdown_pressed function!
+big_poppa is the value of the item
+<nanome.api.ui.dropdown_item.DropdownItem object at 0x04096760>
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x04096C28>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x04096A78>]
+selected grid is:  <nanome.api.ui.dropdown_item.DropdownItem object at 0x04096760>
+after is:  False
+run button unusable case 3
+
+file descriptor ligand is 4 
+
+
+file descriptor protein is 5 
+
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x04096C28>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x04096A78>]
+selected grid is:  <nanome.api.ui.dropdown_item.DropdownItem object at 0x04096760>
+after is:  False
+run button unusable case 1
+
+ <nanome.api.structure.complex.Complex object at 0x04096AA8>
+<nanome.api.structure.complex.Complex object at 0x04096C28> 
+
+ligand - positon: -12.709750175476074 13.307271957397461 -46.83615493774414 rotation, 0.4737461507320404 -0.4509066641330719 0.4695769250392914 -0.5930812358856201
+protein - positon: -12.28821086883545 6.810420989990234 -27.003326416015625 rotation, 0.19414323568344116 -0.9611571431159973 0.173728346824646 -0.09112543612718582
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmp2od7_w3k\ligandscstdn8z9.sdf
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmp2od7_w3k\proteinllug0cxj.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp2od7_w3k 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp2od7_w3k",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmpmkq5g1r3",String
+The KNIME process has finished
+structure_0.sdf
+we got one boys
+structure - positon: 0.0 0.0 0.0 rotation, 0.0 0.0 0.0 0.0
+structure updated - positon: -12.709750175476074 13.307271957397461 -46.83615493774414 rotation, 0.4737461507320404 -0.4509066641330719 0.4695769250392914 -0.5930812358856201
+structure_1.sdf
+we got one boys
+structure - positon: 0.0 0.0 0.0 rotation, 0.0 0.0 0.0 0.0
+structure updated - positon: -12.28821086883545 6.810420989990234 -27.003326416015625 rotation, 0.19414323568344116 -0.9611571431159973 0.173728346824646 -0.09112543612718582
+2
+
+file descriptor is 5
+
+file descriptor is 4
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I ran the change_complex_list function
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I ran the change_complex_list function
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 830 
+=======================================
+
+Registered new session: 64
+Plugin constructed for session 64
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking_grids D:\knime-workspace\KNIME_remove_hydrogens
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+Warning: Function value_unusable is deprecated. Try using value.unusable instead. 
+Constructed plugin menu
+I requested the complex list
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I ran the change_complex_list function
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+selected protein is:  None
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03FF6A78>]
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x03FF6C28>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03FF6A78>]
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I made it to handle_dropdown_pressed function!
+cool_grid is the value of the item
+<nanome.api.ui.dropdown_item.DropdownItem object at 0x03FF67F0>
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x03FF6C28>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03FF6A78>]
+selected grid is:  <nanome.api.ui.dropdown_item.DropdownItem object at 0x03FF67F0>
+after is:  False
+run button unusable case 3
+
+file descriptor ligand is 4 
+
+
+file descriptor protein is 5 
+
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x03FF6C28>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03FF6A78>]
+selected grid is:  <nanome.api.ui.dropdown_item.DropdownItem object at 0x03FF67F0>
+after is:  False
+run button unusable case 1
+
+ <nanome.api.structure.complex.Complex object at 0x03FF6AA8>
+<nanome.api.structure.complex.Complex object at 0x03FF6C28> 
+
+ligand - positon: -12.709750175476074 13.307271957397461 -46.83615493774414 rotation, 0.4737461507320404 -0.4509066641330719 0.4695769250392914 -0.5930812358856201
+protein - positon: -12.28821086883545 6.810420989990234 -27.003326416015625 rotation, 0.19414323568344116 -0.9611571431159973 0.173728346824646 -0.09112543612718582
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmpraili2nw\ligands5ciyu0hu.sdf
+Saved protein SDF C:\Users\rober\AppData\Local\Temp\tmpraili2nw\protein9pqrrqtw.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmpraili2nw 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmpraili2nw",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmpsuskq25l",String
+The KNIME process has finished
+structure_0.sdf
+we got one boys
+structure - positon: 0.0 0.0 0.0 rotation, 0.0 0.0 0.0 0.0
+structure updated - positon: -12.709750175476074 13.307271957397461 -46.83615493774414 rotation, 0.4737461507320404 -0.4509066641330719 0.4695769250392914 -0.5930812358856201
+structure_1.sdf
+we got one boys
+structure - positon: 0.0 0.0 0.0 rotation, 0.0 0.0 0.0 0.0
+structure updated - positon: -12.28821086883545 6.810420989990234 -27.003326416015625 rotation, 0.19414323568344116 -0.9611571431159973 0.173728346824646 -0.09112543612718582
+2
+
+file descriptor is 5
+
+file descriptor is 4
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I ran the change_complex_list function
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I ran the change_complex_list function

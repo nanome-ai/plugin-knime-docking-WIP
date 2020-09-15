@@ -178,12 +178,12 @@ class KNIMEmenu():
         elif self._selected_protein != None and len(self._selected_ligands) > 0 and grid_requirement_met and not self._plugin._running:
             Logs.debug("run button unusable case 3")
             self._grid_dropdown.use_permanent_title = True
-            self._run_button.text.value_unusable = "Run"
+            self._run_button.text.value_unusable = "Remove Hydrogens"
             self._run_button.unusable = False
         else:
             Logs.debug('run button unusable case 2')
             self._grid_dropdown.use_permanent_title = True
-            self._run_button.text.value_unusable = "Run"
+            self._run_button.text.value_unusable = "Remove Hydrogens"
             self._run_button.unusable = True
         if update:
             self._plugin.update_content(self._run_button)
