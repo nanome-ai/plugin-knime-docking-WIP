@@ -19,7 +19,7 @@ class knime_runner():
         #must enter the path to computer's knime.exe file below#
         knime_exe = r'D:\KNIME\knime.exe' #UPDATE!!
         BATCH = "org.knime.product.KNIME_BATCH_APPLICATION"
-        workflowDir = r'-workflowDir="{}"'.format(self._plugin._workflow_dir) #UPDATE!!
+        workflowDir = r'-workflowDir="{}"'.format(self._plugin._workflow_dir) 
         preferences = r'-preferences="D:\knime-workspace\preferences.epf"' 
         input_folder = r'-workflow.variable=input_folder,"{}",String'.format(self._plugin._input_directory.name)
         Logs.debug(input_folder)
