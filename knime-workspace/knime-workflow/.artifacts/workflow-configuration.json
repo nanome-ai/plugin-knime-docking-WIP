@@ -1,0 +1,27 @@
+
+{
+    "knime.var.ligand_output": {
+        "type": "string",
+        "default": "D:/knime-workspace/output/ligand.sdf"
+    },
+    "knime.var.protein_output": {
+        "type": "string",
+        "default": "D:/knime-workspace/output/protein.sdf"
+    },
+    "knime.var.basename": {
+        "type": "string",
+        "default": "D:/knime-workspace/data/output.sdf"
+    },
+    "knime.var.output_folder": {
+        "type": "string",
+        "default": "D:\\knime-workspace\\data\\sdf_test"
+    },
+    "knime.var.input_folder": {
+        "type": "string",
+        "default": "D:\\knime-workspace\\data\\sdf_test"
+    },
+    "knime.var.output_file": {
+        "type": "string",
+        "default": "D:\\knime-workspace\\data\\sdf_test"
+    }
+}

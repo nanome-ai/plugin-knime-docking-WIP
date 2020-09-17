@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="filename" type="xstring" value="D:/knime-workspace/output\output.sdf"/>
+<entry key="titleColumn" type="xstring" isnull="true" value=""/>
+<entry key="structureColumn" type="xstring" value="SDF (Removed Hs)"/>
+<entry key="overwriteOK" type="xboolean" value="true"/>
+<config key="column-filter">
+<entry key="filter-type" type="xstring" value="STANDARD"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="19"/>
+<entry key="0" type="xstring" value="Location"/>
+<entry key="1" type="xstring" value="URL"/>
+<entry key="2" type="xstring" value="Filename"/>
+<entry key="3" type="xstring" value="Molecule Name"/>
+<entry key="4" type="xstring" value="User Initials"/>
+<entry key="5" type="xstring" value="Program Name"/>
+<entry key="6" type="xstring" value="Date"/>
+<entry key="7" type="xstring" value="Dimensionality"/>
+<entry key="8" type="xstring" value="Scaling Factor (1)"/>
+<entry key="9" type="xstring" value="Scaling Factor (2)"/>
+<entry key="10" type="xstring" value="Energy"/>
+<entry key="11" type="xstring" value="Internal Registry Number"/>
+<entry key="12" type="xstring" value="Comments"/>
+<entry key="13" type="xstring" value="Atom Count"/>
+<entry key="14" type="xstring" value="Bond Count"/>
+<entry key="15" type="xstring" value="Atom List Count"/>
+<entry key="16" type="xstring" value="stext Entries count"/>
+<entry key="17" type="xstring" value="Chiral"/>
+<entry key="18" type="xstring" value="Molfile Version"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value=""/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+<entry key="org.knime.chem.types.SdfValue" type="xboolean" value="false"/>
+<entry key="org.knime.chem.types.MolValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.rdkit.knime.types.RDKitMolValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+<entry key="skipProblematicItems" type="xboolean" value="false"/>
+<entry key="omitMissingValues" type="xboolean" value="false"/>
+<entry key="addEmptyStructures" type="xboolean" value="false"/>
+<entry key="characterSetName" type="xstring" value="US-ASCII"/>
+</config>
+<config key="variables">
+<entry key="version" type="xstring" value="V_2019_09_13"/>
+<config key="tree">
+<config key="filename">
+<entry key="used_variable" type="xstring" value="filePath"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="factory" type="xstring" value="org.knime.chem.base.node.io.sdfwriter2.SDFWriterNodeFactory"/>
+<entry key="node-name" type="xstring" value="SDF Writer"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Chemistry Base nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.chem.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-bundle-version" type="xstring" value="4.2.0.v202006171516"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Base Chemistry Types &amp; Nodes"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.chem.types.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+<entry key="node-feature-version" type="xstring" value="4.2.0.v202006171516"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="SDF Writer"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports"/>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
