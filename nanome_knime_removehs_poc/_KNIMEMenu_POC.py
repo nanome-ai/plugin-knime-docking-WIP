@@ -33,7 +33,9 @@ class KNIMEmenu():
 
         Logs.debug("calling reset from change_complex_list")
 
-        if self._no_reset:
+        if self._plugin._running:
+            self._no_reset = True
+        elif self._no_reset:
             self._no_reset = False
         else:
             self.reset(update_menu=False)

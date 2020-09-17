@@ -9,6 +9,7 @@ from ._KNIMErunner_POC import knime_runner
 import sys
 import argparse
 import shutil
+from functools import partial
 
 SDFOPTIONS = nanome.api.structure.Complex.io.SDFSaveOptions()
 
@@ -16,37 +17,35 @@ SDFOPTIONS = nanome.api.structure.Complex.io.SDFSaveOptions()
 class KNIME_removeHs_POC(nanome.PluginInstance):
 
     def start(self):
+        # intake command line arguments
         arg_dict = self._custom_data[0]
         self._workflow_dir = arg_dict['wkflw_dir'][0]
         self._grid_dir = arg_dict['grid_dir'][0]
         self._save_location = arg_dict['output_dir'][0]
-        Logs.debug(self._save_location, self._grid_dir, self._workflow_dir)
+        self._knime_path = arg_dict['knime_path'][0]
+        Logs.debug(self._save_location, self._grid_dir,
+                   self._workflow_dir, self._knime_path)
 
-        
-        # self._ligands_output = tempfile.NamedTemporaryFile(delete=False, prefix="ligands", suffix=".sdf", dir=self._output_directory.name)
-        # self._protein_output = tempfile.NamedTemporaryFile(delete=False, prefix="protein", suffix=".sdf", dir=self._output_directory.name)
-        # self.sdf_test = r"D:\knime-workspace\data\sdf_test\{}"
-        # self._input_directory = r"D:\knime-workspace\data\sdf_test"
-        # self._output_directory = r"D:\knime-workspace\data\sdf_test"
-        # self._ligands_output = r"D:\knime-workspace\data\sdf_test\structure_0.sdf"
-        # self._protein_output = r"D:\knime-workspace\data\sdf_test\structure_1.sdf"
-
+        # instantiate and build knime driver and menu
         self._menu = KNIMEmenu(self)
         self._runner = knime_runner(self)
-        self._menu.build_menu()  # The build_menu method from _KNIMEMenu_POC.py
+        self._menu.build_menu()
+        # populate menu
         self.request_complex_list(self.on_complex_list_received)
         self._menu.populate_grid_dropdown()
         Logs.debug("I requested the complex list")
 
-        self._protein, self._ligands = None, None
-
+        # variables
+        self._protein = None
+        self._ligands = None
         self._running = False
         self._ran = False
-        
 
+    # callback function for the request_complex_list method - runs
+    # the menu's method for updating/populating menu with workspace data 
+    
     def on_complex_list_received(self, complexes):
         self._menu.populate_protein_ligand_dropdown(complexes)
-        Logs.debug("I ran the change_complex_list function")
 
     # Called when a complex is added to the workspace in Nanome
     def on_complex_added(self):
@@ -56,13 +55,13 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
     def on_complex_removed(self):
         self.request_complex_list(self.on_complex_list_received)
 
+    # does basically nothing, should be removed or made to restart/refresh
+    # the plugin.
     def on_run(self):
-        # menu = self._menu
         # Displays a message in the console
         Logs.message("Connected to a new session!")
         self._menu.enabled = True
         self.update_menu(self.menu)
-        # self.request_workspace(self.on_workspace_received) # Request the entire workspace, in "deep" mode
 
     def request_refresh(self):
         self._menu._selected_mobile = []
@@ -82,8 +81,48 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         Logs.debug("\n", ligands)
         protein = self._menu.get_protein()
         Logs.debug(protein, "\n")
-        request_list = [protein.index, ligands.index]
-        self.request_complexes(request_list, self.save_files) #self.save_files is the callback function, activated when complexes are received
+        self.request_list = [protein.index, ligands.index]
+        Logs.debug("\n ************ \nrequest list:",
+                   self.request_list, "\n**************")
+        # self.save_files is the callback function, activated when complexes are received
+        self.request_complexes(self.request_list, self.save_files)
+
+# This function is used in _KNIMErunner_POC's _workflow_finished method to
+# "align" modified complexes with source complexes
+# The `align_callback(self)` method in the `_KNIMErunner` class is passed to 
+# this method - the `finish_workflow_runner` parameter - which passes it as 
+# the callback function for `on_complexes_received`, which is itself a callback function 
+# for `self.request_complexes`. Phew. 
+    def align(self, structure, finish_workflow_runner):
+        
+        Logs.debug('\n\n STARTING ALIGN getting updated complex\n*************')
+
+        ligand = self._menu.get_ligands()
+        Logs.debug(ligand)
+        request_list = [ligand.index]
+        Logs.debug(ligand.index)
+        Logs.debug(request_list)
+        
+        #Request a deep copy of ligand in order to get updated position + rotation value
+        self.request_complexes(self.request_list, partial(self.on_complex_received, finish_workflow_runner=finish_workflow_runner))
+
+# Callback function for 
+    def on_complex_received(self, complexes, finish_workflow_runner):
+        Logs.debug(complexes)
+        complex = complexes[1]
+        Logs.debug(complex)
+        self._runner._structure.position = complex.position
+        self._runner._structure.rotation = complex.rotation
+        self._runner._structure.name = complex.name + " (Docked)"
+        self._runner._structure.locked = True
+
+        #toggle visibility of original ligand
+        complex.visible = False
+        # complex.locked = True
+        self.update_structures_shallow([complex]) 
+
+        finish_workflow_runner()
+        
 
     def on_stop(self):
         Logs.debug("I STOPPED")
@@ -93,31 +132,40 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self._output_directory = tempfile.TemporaryDirectory()
         self._ligands_input = tempfile.NamedTemporaryFile(
             delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
-        Logs.debug('\nfile descriptor ligand is', self._ligands_input.fileno(), '\n')
-        self._protein_input = tempfile.NamedTemporaryFile(
-            delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
-        Logs.debug('\nfile descriptor protein is', self._protein_input.fileno(), '\n')
+        Logs.debug('\nfile descriptor ligand is',
+                   self._ligands_input.fileno(), '\n')
+        # self._protein_input = tempfile.NamedTemporaryFile(
+        #     delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
+        # Logs.debug('\nfile descriptor protein is', self._protein_input.fileno(), '\n')
 
+# Originally written to cleanup multiple TemporaryNamedFiles, leaving structure for now in case this
+# becomes a desired feature down the road
     def cleanup_temp_files(self):
-        for file in [self._protein_input, self._ligands_input]:
+        for file in [self._ligands_input]:
             try:
                 Logs.debug('\nfile descriptor is', file.fileno())
                 os.close(file.fileno())
             except OSError:
                 Logs.debug('\nfile already closed')
-        
+
         shutil.rmtree(self._input_directory.name, ignore_errors=True)
-        shutil.rmtree(self._output_directory.name, ignore_errors= True)
+        shutil.rmtree(self._output_directory.name, ignore_errors=True)
 
 # This method expects only one ligand for now
     def save_files(self, complexes):
-        self._protein, self._ligands = complexes[0], complexes[1] # we expect this order based on the request list defined in run_workflow method
-        Logs.debug("ligand - positon:", self._ligands.position, "rotation,", self._ligands.rotation)
-        Logs.debug("protein - positon:", self._protein.position, "rotation,", self._protein.rotation)
+        Logs.debug("\n", complexes)
+        # we expect this order based on the request list defined in run_workflow method
+        self._protein, self._ligands = complexes[0], complexes[1]
+        self._protein.locked = True
+        self._ligands.locked = True
+        self.update_structures_shallow([self._protein, self._ligands])
+        Logs.debug("ligand - positon:", self._ligands.position,
+                   "rotation,", self._ligands.rotation)
+        # Logs.debug("protein - positon:", self._protein.position, "rotation,", self._protein.rotation)
         self._ligands.io.to_sdf(self._ligands_input.name, SDFOPTIONS)
         Logs.debug("Saved ligands SDF", self._ligands_input.name)
-        self._protein.io.to_sdf(self._protein_input.name, SDFOPTIONS) 
-        Logs.debug("Saved protein SDF", self._protein_input.name)
+        # self._protein.io.to_sdf(self._protein_input.name, SDFOPTIONS)
+        # Logs.debug("Saved protein SDF", self._protein_input.name)
         Logs.debug("\ncomplexes saved as .pdb files to the destination %s \n" %
                    self._input_directory.name)
 
@@ -133,15 +181,15 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
 def main():
 
     base_arg_dict = {
-        '-a': 'connects to a NTS at the specified IP address', 
-        '-p': 'connects to a NTS at the specified port', 
-        '-k': 'specifies a key file to use to connect to NTS', 
-        '-n': 'name to display for this plugin in Nanome', 
-        '-v': 'enable verbose mode, to display Logs.debug', 
-        '-r': 'restart plugin automatically if a .py or .json file in current directory changes', 
-        '--auto-reload': 'same as -r', 
+        '-a': 'connects to a NTS at the specified IP address',
+        '-p': 'connects to a NTS at the specified port',
+        '-k': 'specifies a key file to use to connect to NTS',
+        '-n': 'name to display for this plugin in Nanome',
+        '-v': 'enable verbose mode, to display Logs.debug',
+        '-r': 'restart plugin automatically if a .py or .json file in current directory changes',
+        '--auto-reload': 'same as -r',
         '--ignore': 'to use with auto-reload. All paths matching this pattern will be ignored, use commas to specify several. Supports */?/[seq]/[!seq]'}
-        
+
     parser = argparse.ArgumentParser()
 
     for arg in base_arg_dict:
@@ -153,7 +201,9 @@ def main():
                         help='enter the path to the docking grid folder')
     parser.add_argument('--output_dir', nargs=1,
                         help='enter the path to the desired output folder, where data generated by the plugin will be written')
-    
+    parser.add_argument('--knime_path', nargs=1,
+                        help='enter the path to the host machine\'s knime.exe file')
+
     args = parser.parse_args()
     arg_dict = vars(args)
 
@@ -163,9 +213,6 @@ def main():
     plugin.set_plugin_class(KNIME_removeHs_POC)
     plugin.run('plugins.nanome.ai', 9999)
 
-
-    
- 
 
 if __name__ == '__main__':
     main()
