@@ -20,7 +20,7 @@ class knime_runner():
         knime_exe = self._plugin._knime_path
         BATCH = "org.knime.product.KNIME_BATCH_APPLICATION"
         workflowDir = r'-workflowDir="{}"'.format(self._plugin._workflow_dir) 
-        preferences = r'-preferences="D:\knime-workspace\preferences.epf"' 
+        preferences = r'-preferences="{}"'.format(self._plugin._prefences_path) 
         input_folder = r'-workflow.variable=input_folder,"{}",String'.format(self._plugin._input_directory.name)
         Logs.debug(input_folder)
         output_folder = r'-workflow.variable=output_folder,"{}",String'.format(self._plugin._output_directory.name)

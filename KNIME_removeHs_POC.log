@@ -14932,3 +14932,103 @@ Connected to server plugins.nanome.ai 9999
 Registered with plugin ID 1005 
 =======================================
 
+Start plugin
+Connected to server plugins.nanome.ai 9999
+Registered with plugin ID 1024 
+=======================================
+
+Registered new session: 113
+Plugin constructed for session 113
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking_grids D:\knime-workspace\KNIME_remove_hydrogens D:\Program_Files\KNIME\knime.exe
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+Warning: Function value_unusable is deprecated. Try using value.unusable instead. 
+Constructed plugin menu
+I requested the complex list
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I made it to handle_dropdown_pressed function!
+241 is the value of the item
+selected protein is:  None
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03AC6A90>]
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I made it to handle_dropdown_pressed function!
+2HIU is the value of the item
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x03AC6C40>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03AC6A90>]
+selected grid is:  None
+after is:  False
+run button unusable case 2
+I made it to handle_dropdown_pressed function!
+big_poppa is the value of the item
+<nanome.api.ui.dropdown_item.DropdownItem object at 0x03AC6778>
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x03AC6C40>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03AC6A90>]
+selected grid is:  <nanome.api.ui.dropdown_item.DropdownItem object at 0x03AC6778>
+after is:  False
+run button unusable case 3
+
+file descriptor ligand is 4 
+
+selected protein is:  <nanome.api.structure.complex.Complex object at 0x03AC6C40>
+selected ligand is:  [<nanome.api.ui.dropdown_item.DropdownItem object at 0x03AC6A90>]
+selected grid is:  <nanome.api.ui.dropdown_item.DropdownItem object at 0x03AC6778>
+after is:  False
+run button unusable case 1
+
+ <nanome.api.structure.complex.Complex object at 0x03AC6AC0>
+<nanome.api.structure.complex.Complex object at 0x03AC6C40> 
+
+
+ ************ 
+request list: [46980636737, 28485736512] 
+**************
+
+ [<nanome.api.structure.complex.Complex object at 0x04041BE0>, <nanome.api.structure.complex.Complex object at 0x04041D48>]
+ligand - positon: 1.887486723717302e-05 4.799978733062744 -49.999900817871094 rotation, -7.368218376574583e-16 -1.0 3.3713032365767504e-08 -2.1855694143368964e-08
+Saved ligands SDF C:\Users\rober\AppData\Local\Temp\tmp7qupatso\ligandsxqa3j39g.sdf
+
+complexes saved as .pdb files to the destination C:\Users\rober\AppData\Local\Temp\tmp7qupatso 
+
+I made it to the run_knime function!
+I made it to the knime_runner file!
+-workflow.variable=input_folder,"C:\Users\rober\AppData\Local\Temp\tmp7qupatso",String
+-workflow.variable=output_folder,"C:\Users\rober\AppData\Local\Temp\tmpk0t7k5ey",String
+The KNIME process has finished
+structure_0.sdf
+we got one boys
+structure - positon: 0.0 0.0 0.0 rotation, 0.0 0.0 0.0 0.0
+
+
+ STARTING ALIGN getting updated complex
+*************
+<nanome.api.structure.complex.Complex object at 0x03AC6AC0>
+28485736512
+[28485736512]
+[<nanome.api.structure.complex.Complex object at 0x042CCB38>, <nanome.api.structure.complex.Complex object at 0x0409FF70>]
+<nanome.api.structure.complex.Complex object at 0x0409FF70>
+
+Name of complex is:  241 (Docked)
+structure updated - positon: 1.887486723717302e-05 4.799978733062744 -49.999900817871094 rotation, -7.368218376574583e-16 -1.0 3.3713032365767504e-08 -2.1855694143368964e-08
+1
+
+file descriptor is 4
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
