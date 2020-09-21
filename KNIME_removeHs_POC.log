@@ -15032,3 +15032,105 @@ selected ligand is:  []
 selected grid is:  None
 after is:  False
 run button unusable case 2
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: NodeContent Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: NodeContentArray Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: NodeContentGenericWrapper Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: uint Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: float Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: RecyclableArray Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ListPooled Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Vector2 Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Matrix4x4 Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Volume Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Color32 Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ComplexPropertyMolecular Version: 106
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ComplexPropertyRendering Version: 108
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: MoleculePropertyMolecular Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: MoleculePropertyRendering Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: MoleculePropertyConformer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ChainPropertyMolecular Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ChainPropertyRendering Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ResiduePropertyMolecular Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ResiduePropertyRendering Version: 105
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomPropertyMolecular Version: 119
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomPropertyRendering Version: 114
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomPropertyConformer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: BondPropertyMolecular Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: BondPropertyRendering Version: 110
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: BondPropertyConformer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: InteractionPropertyMolecular Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: InteractionPropertyRendering Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Focus Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Coloring Version: 110
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: StructureToggle Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomToggle Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomPositioning Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomColoring Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomScaling Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ListContainer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomLabeling Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomFlag Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomVisual Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: RibbonToggle Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: RibbonVisual Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Labeling Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: SurfaceToggle Version: 117
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: SurfaceVisual Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: SurfaceRegen Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Conformer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AtomTyping Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ReactiveList Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Tuple3 Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ReactiveIndexedDictionary Version: 1
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: IStream Version: 2
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ReactiveDictionary Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: KeywordData Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperButtonSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperMeshSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperSliderSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperTextInputSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperLabelSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperListSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperImageSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperLoadingBarSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: UIContentWrapperDropdownSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: SequenceResidueData Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: SequenceEntryData Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: SphereShape Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Shape Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: ShapeWrapperSphereSerializer Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: char Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Snapshot Version: 2
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: WorkspaceSave Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: HandPose Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: HumanPose Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AddChildWithProperty Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: AddChild Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Property Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Trigger Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: DeleteNode Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: TransmissionData Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: Vector4 Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: SetShape Version: 0
+Warning: Plugin Library might be outdated: received a serializer version for an unknown serializer: DeleteShape Version: 0
+Registered new session: 620
+Plugin constructed for session 620
+Starting plugin
+D:\knime-workspace\data\sdf_test D:\COMPCHEM\docking_grids D:\knime-workspace\KNIME_remove_hydrogens D:\Program_Files\KNIME\knime.exe
+Warning: The default menu (self.menu) is now deprecated and will be removed in a future version. Please use the ui.Menu() constructor to create the menu.
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+Warning: Function value_unusable is deprecated. Try using value.unusable instead. 
+Constructed plugin menu
+I requested the complex list
+calling reset from change_complex_list
+reset called
+selected protein is:  None
+selected ligand is:  []
+selected grid is:  None
+after is:  False
+run button unusable case 2
+Session 620 disconnected
