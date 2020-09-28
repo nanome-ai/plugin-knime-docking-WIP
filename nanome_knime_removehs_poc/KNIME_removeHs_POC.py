@@ -129,8 +129,10 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         Logs.debug("I STOPPED")
 
     def make_temp_files(self):
-        self._input_directory = tempfile.TemporaryDirectory()
-        self._output_directory = tempfile.TemporaryDirectory()
+        # input_name = os.path.join(os.getcwd(), 'nanome_input_temp')
+        # output_name = os.path.join(os.getcwd(), 'nanome_output_temp')
+        self._input_directory = tempfile.TemporaryDirectory(dir = os.getcwd())
+        self._output_directory = tempfile.TemporaryDirectory(dir = os.getcwd())
         self._ligands_input = tempfile.NamedTemporaryFile(
             delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
         Logs.debug('\nfile descriptor ligand is',
