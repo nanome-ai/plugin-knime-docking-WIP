@@ -43,8 +43,8 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self._ran = False
 
     # callback function for the request_complex_list method - runs
-    # the menu's method for updating/populating menu with workspace data 
-    
+    # the menu's method for updating/populating menu with workspace data
+
     def on_complex_list_received(self, complexes):
         self._menu.populate_protein_ligand_dropdown(complexes)
 
@@ -70,10 +70,10 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self.request_complex_list(self.on_complex_list_received)
         nanome.util.Logs.debug("Complex list requested")
 
-# This function is called by the KNIME_menu.py class's callback for the
-#   "Run Docking" button - activates knime with the run_knime function in the
-#   _KNIMErunner.py script.
-# ##
+    # This function is called by the KNIME_menu.py class's callback for the
+    #   "Run Docking" button - activates knime with the run_knime function in the
+    #   _KNIMErunner.py script.
+    # ##
     def run_workflow(self):
         self.make_temp_files()
         self._running = True
@@ -88,65 +88,53 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         # self.save_files is the callback function, activated when complexes are received
         self.request_complexes(self.request_list, self.save_files)
 
-# This function is used in _KNIMErunner_POC's _workflow_finished method to
-# "align" modified complexes with source complexes
-# The `align_callback(self)` method in the `_KNIMErunner` class is passed to 
-# this method - the `finish_workflow_runner` parameter - which passes it as 
-# the callback function for `on_complexes_received`, which is itself a callback function 
-# for `self.request_complexes`. Phew. 
+    # This function is used in _KNIMErunner_POC's _workflow_finished method to
+    # "align" modified complexes with source complexes
+    # The `align_callback(self)` method in the `_KNIMErunner` class is passed to
+    # this method - the `finish_workflow_runner` parameter - which passes it as
+    # the callback function for `on_complexes_received`, which is itself a callback function
+    # for `self.request_complexes`. Phew.
     def align(self, structure, finish_workflow_runner):
-        
+
         Logs.debug('\n\n STARTING ALIGN getting updated complex\n*************')
 
         ligand = self._menu.get_ligands()
-        Logs.debug(ligand)
         request_list = [ligand.index]
-        Logs.debug(ligand.index)
-        Logs.debug(request_list)
-        
-        #Request a deep copy of ligand in order to get updated position + rotation value
-        self.request_complexes(self.request_list, partial(self.on_complex_received, finish_workflow_runner=finish_workflow_runner))
 
-# Callback function for 
+        # Request a deep copy of ligand in order to get updated position + rotation value
+        self.request_complexes(self.request_list, partial(
+            self.on_complex_received, finish_workflow_runner=finish_workflow_runner))
+
+    # Callback function for when complexes are received
     def on_complex_received(self, complexes, finish_workflow_runner):
-        Logs.debug(complexes)
         complex = complexes[1]
-        Logs.debug(complex)
         self._runner._structure.position = complex.position
         self._runner._structure.rotation = complex.rotation
         self._runner._structure.name = complex.name + " (Docked)"
         self._runner._structure.locked = True
 
-        #toggle visibility of original ligand
+        # toggle visibility of original ligand
         complex.visible = False
         # complex.locked = True
-        self.update_structures_shallow([complex]) 
+        self.update_structures_shallow([complex])
 
         finish_workflow_runner()
-        
-
-    def on_stop(self):
-        Logs.debug("I STOPPED")
 
     def make_temp_files(self):
         # input_name = os.path.join(os.getcwd(), 'nanome_input_temp')
         # output_name = os.path.join(os.getcwd(), 'nanome_output_temp')
-        self._input_directory = tempfile.TemporaryDirectory(dir = os.getcwd())
-        self._output_directory = tempfile.TemporaryDirectory(dir = os.getcwd())
+        self._input_directory = tempfile.TemporaryDirectory(dir=os.getcwd())
+        self._output_directory = tempfile.TemporaryDirectory(dir=os.getcwd())
         self._ligands_input = tempfile.NamedTemporaryFile(
             delete=False, prefix="ligands", suffix=".sdf", dir=self._input_directory.name)
-        Logs.debug('\nfile descriptor ligand is',
-                   self._ligands_input.fileno(), '\n')
         # self._protein_input = tempfile.NamedTemporaryFile(
         #     delete=False, prefix="protein", suffix=".sdf", dir=self._input_directory.name)
-        # Logs.debug('\nfile descriptor protein is', self._protein_input.fileno(), '\n')
 
-# Originally written to cleanup multiple TemporaryNamedFiles, leaving structure for now in case this
-# becomes a desired feature down the road
+    # Originally written to cleanup multiple TemporaryNamedFiles, leaving structure for now in case this
+    # becomes a desired feature down the road
     def cleanup_temp_files(self):
         for file in [self._ligands_input]:
             try:
-                Logs.debug('\nfile descriptor is', file.fileno())
                 os.close(file.fileno())
             except OSError:
                 Logs.debug('\nfile already closed')
@@ -154,25 +142,15 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         shutil.rmtree(self._input_directory.name, ignore_errors=True)
         shutil.rmtree(self._output_directory.name, ignore_errors=True)
 
-# This method expects only one ligand for now
+    # This method expects only one ligand for now
     def save_files(self, complexes):
-        Logs.debug("\n", complexes)
         # we expect this order based on the request list defined in run_workflow method
         self._protein, self._ligands = complexes[0], complexes[1]
         self._protein.locked = True
         self._ligands.locked = True
         self.update_structures_shallow([self._protein, self._ligands])
-        Logs.debug("ligand - positon:", self._ligands.position,
-                   "rotation,", self._ligands.rotation)
-        # Logs.debug("protein - positon:", self._protein.position, "rotation,", self._protein.rotation)
         self._ligands.io.to_sdf(self._ligands_input.name, SDFOPTIONS)
-        Logs.debug("Saved ligands SDF", self._ligands_input.name)
         # self._protein.io.to_sdf(self._protein_input.name, SDFOPTIONS)
-        # Logs.debug("Saved protein SDF", self._protein_input.name)
-        Logs.debug("\ncomplexes saved as .pdb files to the destination %s \n" %
-                   self._input_directory.name)
-
-        Logs.message("I made it to the run_knime function!")
 
         self._runner.run_knime()
 
