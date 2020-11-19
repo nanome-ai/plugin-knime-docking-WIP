@@ -18,37 +18,44 @@ $ python3 -m pip install nanome --upgrade
 
 ### Dependencies
 
-**TODO**: Provide instructions on how to install and link any external dependencies for this plugin.
-
-**TODO**: Update docker/Dockerfile to install any necessary dependencies.
+- KNIME
+- Microsoft Visual C++ 2015 Redistributable
+- Miniconda3
+- Python3 (In PATH)
+- Nanome pip package (pip install nanome)
 
 ### Installation
 
-To install KNIME_removeHs_POC:
+To install KNIME-Docking:
 
-```sh
-$ python3 -m pip install nanome-knime-removehs-poc
-```
+- From KNIME, navigate to File > Install KNIME Extensions
+- Select the RDKit, Vernalis Nodes, and KNIME Python integrations
+- Install the extensions and restart KNIME when prompted
+- Navigate to File > Preferences > KNIME > Python and point the 'Conda path' option to your installation of Conda
+- Then, select Python 3 as the default version
+- Click "New Environment" under Python 3 and use the default py3_knime option
+- Once finished, click 'Apply'
+- Navigate to File > Export Preferences, and enter your desired path for the preferences file. Make note of this path.
 
 ### Usage
 
-To start KNIME_removeHs_POC:
-
+- Close KNIME. The KNIME App must be closed in order for the plugin to work. 
+- Navigate to the this repository locally and review the arguments in run_command.txt. It should look something like this:
 ```sh
-$ nanome-knime-removehs-poc -a <plugin_server_address> [optional args]
+$ python run.py -a plugins.nanome.ai -p 9999 -r -v --wkflw_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\knime-workflow --grid_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\docking_grids --output_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\data\sdf_test --knime_path=C:\KNIME\knime.exe --preferences_path=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\preferences.epf
 ```
-
-#### Optional arguments:
-
-- `-x arg`
-
-  Example argument documentation
-
-**TODO**: Add any optional argument documentation here, or remove section entirely.
+- All options are required:
+- `wkflw_dir` is the directory to your workflow. By default, there is one located in ${repo}/knime-workspace
+- `grid_dir` is the directory to your KNIME grid files. By default, theree is one located in ${repo}/knime-workspace
+- `output_dir` is the directory you want the output of your workflow to be saved to
+- `knime_path` is the path to your knime executable (should be C:\KNIME\knime.exe if you followed these directions)
+- `preferences_path` is (above) where you exported your KNIME preferences to
 
 ### Docker Usage
 
-To run KNIME_removeHs_POC in a Docker container:
+To run KNIME-Docking in a Docker container:
+
+This section of the readme is incomplete. Please check back later.
 
 ```sh
 $ cd docker
@@ -57,8 +64,9 @@ $ ./deploy.sh -a <plugin_server_address> [optional args]
 ```
 
 ### Development
+This section of the readme is incomplete. Please check back later.
 
-To run KNIME_removeHs_POC with autoreload:
+To run KNIME-Docking with autoreload:
 
 ```sh
 $ python3 run.py -r -a <plugin_server_address> [optional args]
