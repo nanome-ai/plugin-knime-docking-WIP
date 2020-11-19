@@ -46,6 +46,7 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
     # the menu's method for updating/populating menu with workspace data
 
     def on_complex_list_received(self, complexes):
+        Logs.debug('this happened')
         self._menu.populate_protein_ligand_dropdown(complexes)
 
     # Called when a complex is added to the workspace in Nanome

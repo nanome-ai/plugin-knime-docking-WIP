@@ -6,6 +6,8 @@ from functools import partial
 import pathlib
 import os
 
+BASE_PATH = os.path.dirname(os.path.realpath(__file__))
+IMG_REFRESH_PATH = os.path.join(BASE_PATH, 'icons', 'refresh.png')
 
 class KNIMEmenu():
     def __init__(self, knime_plugin):
@@ -244,6 +246,14 @@ class KNIMEmenu():
             "GridDropdown").add_new_dropdown()
         self._grid_dropdown.use_permanent_title = True
         self._grid_dropdown.permanent_title = "None"
+
+        #  update button
+        self.refresh_button = menu.root.find_node("RefreshButton").get_content()
+        self.refresh_button.icon.value.set_all(IMG_REFRESH_PATH)
+        def refresh(button):
+            self.populate_grid_dropdown()
+            self._plugin.request_complex_list(self._plugin.on_complex_list_received)
+        self.refresh_button.register_pressed_callback(refresh)
 
         # run button
         self.ln_run_button = menu.root.find_node("RunButton")
