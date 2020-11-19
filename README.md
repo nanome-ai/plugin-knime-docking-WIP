@@ -53,9 +53,9 @@ $ python run.py -a plugins.nanome.ai -p 9999 -r -v --wkflw_dir=C:\Users\Administ
 
 ### Docker Usage
 
-To run KNIME-Docking in a Docker container:
-
 This section of the readme is incomplete. Please check back later.
+
+To run KNIME-Docking in a Docker container:
 
 ```sh
 $ cd docker
