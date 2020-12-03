@@ -15,10 +15,10 @@ class knime_runner():
     def run_knime(self):
         ## VARIABLES FOR KNIME RUN ##
         # must enter the path to computer's knime.exe file below
-        knime_exe = self._plugin._knime_path
+        knime_exe = os.path.join(self._plugin._knime_dir, 'knime.exe')
         BATCH = "org.knime.product.KNIME_BATCH_APPLICATION"
         workflowDir = r'-workflowDir="{}"'.format(self._plugin._workflow_dir)
-        preferences = r'-preferences="{}"'.format(self._plugin._prefences_path)
+        preferences = r'-preferences="{}"'.format(os.path.join(self._plugin._preferences_dir, 'preferences.epf'))
         input_folder = r'-workflow.variable=input_folder,"{}",String'.format(
             self._plugin._input_directory.name)
         grid_dir = r'-workflow.variable=[lifearcs_var_name], "{}",String'.format(
@@ -44,14 +44,14 @@ class knime_runner():
     file in the output directory is the ligand. It loads the ligand into Nanome as a complex.
 
     The loading process is complicated by the need to align the new, processed or "docked" ligand
-    with the original ligand. We need to set the docked ligand's position and rotation equal to 
+    with the original ligand. We need to set the docked ligand's position and rotation equal to
     those of the original ligand at the moment of loading, which requires an asynchronous call to
-    the Plugin.request_complexes(complexes, callback) function. Due to the difficulties of 
+    the Plugin.request_complexes(complexes, callback) function. Due to the difficulties of
     async actions and i/o, the _workflow_finished function is split into two. The first (_workflow_finished) finds, validates,
     and then loads the file for the docked ligand into Nanome (*not* the workspace) as a Complex object.
-    The second function (align_callback) is then passed off to the plugin's align method as a callback. After the plugin's 
+    The second function (align_callback) is then passed off to the plugin's align method as a callback. After the plugin's
     methods finish retrieving the necessary data from the Nanome workspace, the align_callback
-    
+
     """
 
     def _workflow_finished(self):
