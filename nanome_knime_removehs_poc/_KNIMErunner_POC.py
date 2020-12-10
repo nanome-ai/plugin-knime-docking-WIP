@@ -21,7 +21,7 @@ class knime_runner():
         preferences = r'-preferences="{}"'.format(os.path.join(self._plugin._preferences_dir, 'preferences.epf'))
         input_folder = r'-workflow.variable=input_folder,"{}",String'.format(
             self._plugin._input_directory.name)
-        grid_dir = r'-workflow.variable=[lifearcs_var_name], "{}",String'.format(
+        grid_dir = r'-workflow.variable=grid_dir,"{}",String'.format(
             self._plugin._grid_dir)
         Logs.debug('input_folder arg:', input_folder)
         output_folder = r'-workflow.variable=output_folder,"{}",String'.format(

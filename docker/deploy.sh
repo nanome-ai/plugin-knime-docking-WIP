@@ -2,7 +2,7 @@
 
 if [ -n "$(docker ps -aqf name=nanome-knime-removehs-poc)" ]; then
     echo "removing exited container"
-    docker rm -t0 -f nanome-knime-removehs-poc
+    docker rm -f nanome-knime-removehs-poc
 fi
 
 docker_args=(
@@ -43,7 +43,10 @@ echo ${mounts[@]}
 echo "${ARGS[*]}"
 
 docker run -d \
+--memory=10G \
 ${mounts[@]} \
+--mount type=bind,source=C:/Users/$USERNAME/,target=C:/Users/$USERNAME/ \
+--mount type=bind,source=C:/ProgramData/,target=C:/ProgramData/ \
 --name nanome-knime-removehs-poc \
 --restart unless-stopped \
 -e ARGS="${ARGS[@]}" \
