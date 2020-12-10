@@ -39,6 +39,7 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         # variables
         self._protein = None
         self._ligands = None
+        self._structures = {}
         self._running = False
         self._ran = False
 
@@ -46,11 +47,16 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
     # the menu's method for updating/populating menu with workspace data
 
     def refresh_structure_dropdowns(self, updated_complex=None):
-        self.request_complex_list(self.on_complex_list_received)
+        if updated_complex is not None:
+            if updated_complex.name != self._structures.get(update_complex.id):
+                self.request_complex_list(self.on_complex_list_received)
+        else:
+            self.request_complex_list(self.on_complex_list_received)
 
     def on_complex_list_received(self, complexes):
         for complex in complexes:
             complex.register_updated_callback(self.refresh_structure_dropdowns)
+            self._structures[complex.id] = complex.name
         self._menu.populate_protein_ligand_dropdown(complexes)
 
     # Called when a complex is added to the workspace in Nanome
