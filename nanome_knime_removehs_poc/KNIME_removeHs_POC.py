@@ -45,17 +45,21 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
     # callback function for the request_complex_list method - runs
     # the menu's method for updating/populating menu with workspace data
 
+    def refresh_structure_dropdowns(self, updated_complex=None):
+        self.request_complex_list(self.on_complex_list_received)
+
     def on_complex_list_received(self, complexes):
-        Logs.debug('this happened')
+        for complex in complexes:
+            complex.register_updated_callback(self.refresh_structure_dropdowns)
         self._menu.populate_protein_ligand_dropdown(complexes)
 
     # Called when a complex is added to the workspace in Nanome
     def on_complex_added(self):
-        self.request_complex_list(self.on_complex_list_received)
+        self.refresh_structure_dropdowns()
 
     # Called when a complex is removed from the workspace in Nanome
     def on_complex_removed(self):
-        self.request_complex_list(self.on_complex_list_received)
+        self.refresh_structure_dropdowns()
 
     # does basically nothing, should be removed or made to restart/refresh
     # the plugin.
