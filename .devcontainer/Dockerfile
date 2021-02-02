@@ -38,14 +38,14 @@ RUN echo xfce4-session > ~/.xsession
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends xterm wget default-jre libswt-glx-gtk-4-jni python3-pip
 
-# Install nanome-lib
-RUN pip3 install -e git+https://github.com/nanome-ai/nanome-lib.git#egg=nanome
-
 # Install miniconda
 RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh && \
     chmod +x ./miniconda.sh && \
     ./miniconda.sh -b && \
     rm ./miniconda.sh
+
+# Install nanome-lib
+RUN pip3 install -e git+https://github.com/nanome-ai/nanome-lib.git#egg=nanome
 
 # download & install Knime Analytics Platform
 RUN wget https://download.knime.org/analytics-platform/linux/knime-latest-linux.gtk.x86_64.tar.gz -O knime.tar.gz
