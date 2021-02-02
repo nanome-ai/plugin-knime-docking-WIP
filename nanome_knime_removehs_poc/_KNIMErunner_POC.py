@@ -21,7 +21,7 @@ class knime_runner():
         preferences = r'-preferences="{}"'.format(self._plugin._prefences_path)
         input_folder = r'-workflow.variable=input_folder,"{}",String'.format(
             self._plugin._input_directory.name)
-        grid_dir = r'-workflow.variable=[lifearcs_var_name], "{}",String'.format(
+        grid_dir = r'-workflow.variable=grid_dir,"{}",String'.format(
             self._plugin._grid_dir)
         Logs.debug('input_folder arg:', input_folder)
         output_folder = r'-workflow.variable=output_folder,"{}",String'.format(
@@ -44,14 +44,14 @@ class knime_runner():
     file in the output directory is the ligand. It loads the ligand into Nanome as a complex.
 
     The loading process is complicated by the need to align the new, processed or "docked" ligand
-    with the original ligand. We need to set the docked ligand's position and rotation equal to 
+    with the original ligand. We need to set the docked ligand's position and rotation equal to
     those of the original ligand at the moment of loading, which requires an asynchronous call to
-    the Plugin.request_complexes(complexes, callback) function. Due to the difficulties of 
+    the Plugin.request_complexes(complexes, callback) function. Due to the difficulties of
     async actions and i/o, the _workflow_finished function is split into two. The first (_workflow_finished) finds, validates,
     and then loads the file for the docked ligand into Nanome (*not* the workspace) as a Complex object.
-    The second function (align_callback) is then passed off to the plugin's align method as a callback. After the plugin's 
+    The second function (align_callback) is then passed off to the plugin's align method as a callback. After the plugin's
     methods finish retrieving the necessary data from the Nanome workspace, the align_callback
-    
+
     """
 
     def _workflow_finished(self):

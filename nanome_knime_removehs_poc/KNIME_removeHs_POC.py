@@ -34,7 +34,6 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         # populate menu
         self.request_complex_list(self.on_complex_list_received)
         self._menu.populate_grid_dropdown()
-        Logs.debug("I requested the complex list")
 
         # variables
         self._protein = None

@@ -1,36 +1,21 @@
-#Thu Sep 03 16:50:47 PDT 2020
+#Tue Feb 02 19:53:49 UTC 2021
 \!/=
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=10
-/configuration/org.eclipse.ui.ide/RECENT_WORKSPACES=D\:\\knime-workspace
+/configuration/org.eclipse.ui.ide/RECENT_WORKSPACES=/workspaces/plugin-knime-docking/knime-workspace\n/home/vscode/knime-workspace
 /configuration/org.eclipse.ui.ide/RECENT_WORKSPACES_PROTOCOL=3
 /configuration/org.eclipse.ui.ide/SHOW_RECENT_WORKSPACES=false
-/configuration/org.eclipse.ui.ide/SHOW_WORKSPACE_SELECTION_DIALOG=false
+/configuration/org.eclipse.ui.ide/SHOW_WORKSPACE_SELECTION_DIALOG=true
 /instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
-/instance/org.eclipse.core.resources/pathvariable.input_sdf_file=C\:/Users/rober/OneDrive/Documents/6LU7.SDF
 /instance/org.eclipse.core.resources/version=1
-/instance/org.eclipse.debug.ui/Variables.detail.orientation=Variables.detail.orientation.hidden
-/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
-/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.VariableView+org.eclipse.debug.ui.ShowTypesAction=true
-/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\r\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView">\r\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="org.eclipse.debug.ui.displayVariableTypeNames"/>\r\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="PRESENTATION_SHOW_LOGICAL_STRUCTURES"/>\r\n</PRESENTATION_CONTEXT_PROPERTIES>\r\n</VariablesViewMemento>
-/instance/org.eclipse.debug.ui/preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
-/instance/org.eclipse.help.base/scope=
-/instance/org.eclipse.help.ui/browser.h=900
-/instance/org.eclipse.help.ui/browser.maximized=false
-/instance/org.eclipse.help.ui/browser.w=1600
-/instance/org.eclipse.help.ui/browser.x=189
-/instance/org.eclipse.help.ui/browser.y=210
-/instance/org.eclipse.search/org.eclipse.search.defaultPerspective=org.eclipse.search.defaultPerspective.none
-/instance/org.eclipse.ui.browser/internalWebBrowserHistory=file\:/C\:/Users/rober/AppData/Local/Temp/intro7341154000986272249.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro261817213202872698.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro8581429409387161706.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro1703987838239553962.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro485036123102189018.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro4937864443179407194.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro2563783607558005255.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro707366155965315412.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro3381360800425215447.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro7934979465038730482.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro6103365301737794482.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro1103767548616970748.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro3897428913981753281.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro3056927186480843140.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro7485266690861889978.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro6716156665519882340.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro164809935766781759.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro7337736835895779324.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro8580820764755986162.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro6713293973768879400.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro4040108264097312343.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro161363729552143718.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro5724128381566521410.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro5113118101543442679.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro6191378525269228041.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro1443895275542141559.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro2717886833779410380.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro5295990072250735615.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro1912846605088993740.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro1278007648272549592.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro8857359717454569188.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro1910005540246410104.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro934145260012948403.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro7728898780171067323.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro3198224883862856546.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro630463990066760863.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro7468189563418589763.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro2653147343830345684.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro5866664009596018539.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro8246617079863884690.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro4820718807498298104.html|*|file\:/C\:/Users/rober/AppData/Local/Temp/intro6021342035766239338.html|*|
-/instance/org.eclipse.ui.editors/overviewRuler_migration=migrated_3.1
-/instance/org.eclipse.ui.ide/IMPORT_FILES_AND_FOLDERS_MODE=prompt
-/instance/org.eclipse.ui.ide/IMPORT_FILES_AND_FOLDERS_VIRTUAL_FOLDER_MODE=prompt
+/instance/org.eclipse.e4.ui.css.swt.theme/themeid=org.knime.product.theme.knime
+/instance/org.eclipse.ui.browser/browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="-1"/>
 /instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
-/instance/org.knime.python2/condaDirectoryPath=C\:\\Users\\rober\\miniconda3
+/instance/org.knime.python2/condaDirectoryPath=/home/vscode/miniconda3
 /instance/org.knime.python2/defaultPythonOption=python3
-/instance/org.knime.python2/python2CondaEnvironmentDirectoryPath=C\:\\Users\\rober\\miniconda3
+/instance/org.knime.python2/python2CondaEnvironmentDirectoryPath=/home/vscode/miniconda3
 /instance/org.knime.python2/python2Path=python
-/instance/org.knime.python2/python3CondaEnvironmentDirectoryPath=C\:\\Users\\rober\\miniconda3\\envs\\py3_knime
+/instance/org.knime.python2/python3CondaEnvironmentDirectoryPath=/home/vscode/miniconda3/envs/py3_knime
 /instance/org.knime.python2/python3Path=python3
 /instance/org.knime.python2/pythonEnvironmentType=conda
 /instance/org.knime.python2/serializerId=org.knime.serialization.flatbuffers.column
@@ -42,7 +27,9 @@
 /instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/factoryID=com.knime.explorer.server.examples
 /instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/mountID=EXAMPLES
 /instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/mountpointNumber=1
+/instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/serveraddress=https\://api.hub.knime.com
 /instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/useRest=false
+/instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/username=knime
 /instance/org.knime.workbench.explorer.view/mountpointNode/LOCAL/active=true
 /instance/org.knime.workbench.explorer.view/mountpointNode/LOCAL/defaultMountID=LOCAL
 /instance/org.knime.workbench.explorer.view/mountpointNode/LOCAL/factoryID=org.knime.workbench.explorer.workspace
@@ -54,22 +41,15 @@
 /instance/org.knime.workbench.explorer.view/mountpointNode/My-KNIME-Hub/factoryID=com.knime.explorer.server.workflow_hub
 /instance/org.knime.workbench.explorer.view/mountpointNode/My-KNIME-Hub/mountID=My-KNIME-Hub
 /instance/org.knime.workbench.explorer.view/mountpointNode/My-KNIME-Hub/mountpointNumber=0
+/instance/org.knime.workbench.explorer.view/mountpointNode/My-KNIME-Hub/serveraddress=https\://api.hub.knime.com
 /instance/org.knime.workbench.explorer.view/mountpointNode/My-KNIME-Hub/useRest=false
-/instance/org.knime.workbench.ui/knime.confirm.delete=false
-/instance/org.knime.workbench.workflowcoach/community_node_triple_provider=true
+/instance/org.knime.workbench.explorer.view/mountpointNode/My-KNIME-Hub/username=
 @org.eclipse.core.net=1.3.800.v20200218-0937
 @org.eclipse.core.resources=3.13.700.v20200209-1624
-@org.eclipse.debug.ui=3.14.400.v20200222-1431
-@org.eclipse.help.base=4.2.900.v20200305-0155
-@org.eclipse.help.ui=4.1.800.v20200218-0731
-@org.eclipse.search=3.11.900.v20200211-1227
+@org.eclipse.e4.ui.css.swt.theme=0.12.600.v20200124-0005
 @org.eclipse.ui.browser=3.6.700.v20200217-0820
-@org.eclipse.ui.editors=3.13.100.v20200130-1507
-@org.eclipse.ui.ide=3.17.0.v20200217-1511
 @org.eclipse.ui.workbench=3.118.0.v20200222-0719
-@org.knime.python2=4.2.0.v202007071503
-@org.knime.workbench.core=4.2.0.v202006301620
-@org.knime.workbench.explorer.view=8.6.1.v202008251912
-@org.knime.workbench.ui=4.2.0.v202007101232
-@org.knime.workbench.workflowcoach=4.2.0.v201912131005
+@org.knime.python2=4.3.1.v202101261634
+@org.knime.workbench.core=4.3.0.v202011212015
+@org.knime.workbench.explorer.view=8.7.1.v202101261634
 file_export_version=3.0
