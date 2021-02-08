@@ -41,6 +41,9 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self._running = False
         self._ran = False
 
+    def on_stop(self):
+        self.cleanup_temp_files()
+
     # callback function for the request_complex_list method - runs
     # the menu's method for updating/populating menu with workspace data
 
