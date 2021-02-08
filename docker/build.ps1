@@ -6,4 +6,4 @@ if ($u -or $update) {
 }
 
 $cachebust = Get-Content -Path .\.cachebust
-docker build -f Dockerfile --build-arg CACHEBUST=$cachebust -t nanome-knime-removehs-poc:latest ..
+docker build -f windows.Dockerfile --build-arg CACHEBUST=$cachebust -t nanome-knime-windows:latest ..
