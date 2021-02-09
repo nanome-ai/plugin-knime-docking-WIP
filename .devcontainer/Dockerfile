@@ -45,6 +45,7 @@ RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
     rm ./miniconda.sh
 
 # Install nanome-lib
+RUN pip3 install setuptools
 RUN pip3 install -e git+https://github.com/nanome-ai/nanome-lib.git#egg=nanome
 
 # download & install Knime Analytics Platform
