@@ -20,7 +20,6 @@ ARGS=$*
 lookup_arg() {
     arg_index=-1
     for i in "${!docker_args[@]}"; do
-        echo "checking" ${docker_args[i]}
         if [ "$arg" == "--${docker_args[$i]}" ]; then
             arg_index=$i
             echo "found" $arg "!"
