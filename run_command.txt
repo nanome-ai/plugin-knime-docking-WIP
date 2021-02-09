@@ -1,17 +1,19 @@
 # HOST: DEBIAN
 # PLUGIN: CONTAINER DEBIAN
 # KNIME: HOST DEBIAN
-cd docker && build.sh && deploy.sh -a <NTS> -p 8888 -r -v \
+cd docker && ./build.sh && ./deploy.sh -a plugins.nanome.ai -p 9999 -r -v \
 --wkflw_dir=/nanome_plugins/plugin-knime-docking/knime-workspace/knime-workflow \
 --grid_dir=/nanome_plugins/plugin-knime-docking/knime-workspace/docking_grids \
 --output_dir=/nanome_plugins/plugin-knime-docking/knime-workspace/data/sdf_test \
 --knime_path=/nanome_plugins/plugin-knime-docking/knime/knime \
 --preferences_path=/nanome_plugins/plugin-knime-docking/knime-workspace/preferences.epf
+cd ..
 
 # HOST: WINDOWS (Dev)
 # PLUGIN: CONTAINER DEBIAN
 # KNIME: CONTAINER DEBIAN
-cd docker -and build.sh -and deploy.sh \
+cd docker
+build.sh -and deploy.sh -a plugins.nanome.ai -p 9999 -r -v \
 --wkflw_dir=/workspaces/plugin-knime-docking/knime-workspace/knime-workflow \
 --grid_dir=/workspaces/plugin-knime-docking/knime-workspace/docking_grids \
 --output_dir=/workspaces/plugin-knime-docking/knime-workspace/data/sdf_test \
@@ -25,7 +27,7 @@ cd docker -and build.sh -and deploy.sh \
 cd docker -and build.ps1 -and deploy.ps1 \
 --wkflw_dir "$env:USERPROFILE/Desktop/Nanome/plugin-knime-docking/knime-workspace/knime-workflow" \
 --grid_dir "$env:USERPROFILE/Desktop/Nanome/plugin-knime-docking/knime-workspace/docking_grids" \
---knime_dir "C:/KNIME/" \
+--knime_path "C:/KNIME/knime.exe" \
 --output_dir "C:\Users\Admin\Desktop\Nanome\plugin-knime-docking\knime-workspace\data\sdf_test" \
 --preferences_dir "C:\Users\Admin\Desktop\Nanome\plugin-knime-docking\knime-workspace"
 
@@ -39,9 +41,9 @@ python run.py -a plugins.nanome.ai -p 9999 -r -v \
 --knime_path=C:\KNIME\knime.exe \
 --preferences_path=$env:USERPROFILE\Github\plugin-knime-docking\knime-workspace\preferences.epf
 
-# HOST: DEBIAN (Dev)
-# PLUGIN: CONTAINER DEBIAN
-# KNIME: CONTAINER DEBIAN
+# HOST: DEBIAN (Dev native)
+# PLUGIN: HOST DEBIAN
+# KNIME: HOST DEBIAN
 # Development (debian container with X11)
 python3 run.py -a plugins.nanome.ai -p 9999 -r -v \
 --wkflw_dir=/workspaces/plugin-knime-docking/knime-workspace/knime-workflow \

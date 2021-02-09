@@ -6,8 +6,17 @@ if ($volumeID -ne "") {
     docker rm -f nanome-knime-windows
 }
 
+param ($wkflw_dir, $grid_dir, $knime_path, $output_dir, $preferences_dir)
+$mounts = ""
+
+foreach($mount in $PSBoundParameters.GetEnumerator()) {
+       $mounts += "
+--mount type=bind,source=$($mount.Value),target=$($mount.Value) \"
+}
+
 docker run -d \
+--memory=10g \
 --name nanome-knime-windows \
---restart unless-stopped \
+--restart unless-stopped $mounts \
 -e ARGS="$args" \
 

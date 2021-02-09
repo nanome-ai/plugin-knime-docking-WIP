@@ -15,7 +15,7 @@ class knime_runner():
     def run_knime(self):
         ## VARIABLES FOR KNIME RUN ##
         # must enter the path to computer's knime.exe file below
-        knime_exe = os.path.join(self._plugin._knime_dir, 'knime.exe')
+        knime_exe = os.path.abspath(self._plugin._knime_path)
         BATCH = "org.knime.product.KNIME_BATCH_APPLICATION"
         workflowDir = r'-workflowDir="{}"'.format(self._plugin._workflow_dir)
         preferences = r'-preferences="{}"'.format(os.path.join(self._plugin._preferences_dir, 'preferences.epf'))

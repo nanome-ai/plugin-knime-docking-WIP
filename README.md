@@ -39,7 +39,7 @@ To install KNIME-Docking:
 
 ### Usage
 
-- Close KNIME. The KNIME App must be closed in order for the plugin to work. 
+- Close KNIME. The KNIME App must be closed in order for the plugin to work.
 - Navigate to the this repository locally and review the arguments in run_command.txt. It should look something like this:
 ```sh
 $ python run.py -a plugins.nanome.ai -p 9999 -v --wkflw_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\knime-workflow --grid_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\docking_grids --output_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\data\sdf_test --knime_path=C:\KNIME\knime.exe --preferences_path=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\preferences.epf
@@ -60,7 +60,7 @@ To run KNIME-Docking in a Docker container:
 ```sh
 $ cd docker
 $ ./build.sh
-$ ./deploy.sh --wkflw_dir "C:/path/to/your/workflow/directory" --grid_dir "C:/path/to/your/docking/grids" --knime_dir "C:/KNIME" --output_dir "C:/path/to/your/output/directory" --preferences_dir "C:/path/to/your/preferences/directory" -a plugins.nanome.ai -p 9999
+$ ./deploy.sh --wkflw_dir "C:/path/to/your/workflow/directory" --grid_dir "C:/path/to/your/docking/grids" --knime_path "C:/KNIME/knime.exe" --output_dir "C:/path/to/your/output/directory" --preferences_dir "C:/path/to/your/preferences/directory" -a plugins.nanome.ai -p 9999
 ```
 
 ### Development

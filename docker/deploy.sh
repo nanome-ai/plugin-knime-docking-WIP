@@ -9,7 +9,7 @@ fi
 docker_args=(
 "wkflw_dir"
 "grid_dir"
-"knime_dir"
+"knime_path"
 "output_dir"
 "preferences_dir"
 )
@@ -40,14 +40,9 @@ do
     shift
 done
 
-echo ${mounts[@]}
-echo "${ARGS[*]}"
-
 docker run -d \
 --memory=10g \
 ${mounts[@]} \
---mount type=bind,source=C:/Users/$USERNAME/,target=C:/Users/$USERNAME/ \
---mount type=bind,source=C:/ProgramData/,target=C:/ProgramData/ \
 --name nanome-knime-debian \
 --restart unless-stopped \
 -e ARGS="${ARGS[@]}" \
