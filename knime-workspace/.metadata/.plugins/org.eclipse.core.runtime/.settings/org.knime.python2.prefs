@@ -1,0 +1,9 @@
+condaDirectoryPath=/home/vscode/miniconda3
+defaultPythonOption=python3
+eclipse.preferences.version=1
+python2CondaEnvironmentDirectoryPath=/home/vscode/miniconda3
+python2Path=python
+python3CondaEnvironmentDirectoryPath=/home/vscode/miniconda3/envs/py3_knime
+python3Path=python3
+pythonEnvironmentType=conda
+serializerId=org.knime.serialization.flatbuffers.column

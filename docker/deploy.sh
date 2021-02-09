@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ -n "$(docker ps -aqf name=nanome-knime-removehs-poc)" ]; then
+if [ -n "$(docker ps -aqf name=nanome-knime-debian)" ]; then
     echo "removing exited container"
-    docker stop -t0 nanome-knime-removehs-poc
-    docker rm -f nanome-knime-removehs-poc
+    docker stop -t0 nanome-knime-debian
+    docker rm -f nanome-knime-debian
 fi
 
 docker_args=(
@@ -48,7 +48,7 @@ docker run -d \
 ${mounts[@]} \
 --mount type=bind,source=C:/Users/$USERNAME/,target=C:/Users/$USERNAME/ \
 --mount type=bind,source=C:/ProgramData/,target=C:/ProgramData/ \
---name nanome-knime-removehs-poc \
+--name nanome-knime-debian \
 --restart unless-stopped \
 -e ARGS="${ARGS[@]}" \
-nanome-knime-removehs-poc
+nanome-knime-debian

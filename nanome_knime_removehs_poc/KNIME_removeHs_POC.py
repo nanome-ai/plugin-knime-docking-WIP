@@ -34,7 +34,6 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         # populate menu
         self.request_complex_list(self.on_complex_list_received)
         self._menu.populate_grid_dropdown()
-        Logs.debug("I requested the complex list")
 
         # variables
         self._protein = None
@@ -42,6 +41,9 @@ class KNIME_removeHs_POC(nanome.PluginInstance):
         self._structures = {}
         self._running = False
         self._ran = False
+
+    def on_stop(self):
+        self.cleanup_temp_files()
 
     # callback function for the request_complex_list method - runs
     # the menu's method for updating/populating menu with workspace data
