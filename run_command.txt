@@ -2,13 +2,13 @@
 # PLUGIN: CONTAINER DEBIAN
 # KNIME: HOST DEBIAN
 cd docker && build.sh && deploy.sh -a <NTS> -p 8888 -r -v \
---wkflw_dir=~/plugins/plugin-knime-docking/knime-workspace/knime-workflow \
---grid_dir=~/plugins/plugin-knime-docking/knime-workspace/docking_grids \
---output_dir=~/plugins/plugin-knime-docking/knime-workspace/data/sdf_test \
---knime_path=~/plugins/plugin-knime-docking/knime/knime \
---preferences_path=~/plugins/plugin-knime-docking/knime-workspace/preferences.epf
+--wkflw_dir=/nanome_plugins/plugin-knime-docking/knime-workspace/knime-workflow \
+--grid_dir=/nanome_plugins/plugin-knime-docking/knime-workspace/docking_grids \
+--output_dir=/nanome_plugins/plugin-knime-docking/knime-workspace/data/sdf_test \
+--knime_path=/nanome_plugins/plugin-knime-docking/knime/knime \
+--preferences_path=/nanome_plugins/plugin-knime-docking/knime-workspace/preferences.epf
 
-# HOST: WINDOWS
+# HOST: WINDOWS (Dev)
 # PLUGIN: CONTAINER DEBIAN
 # KNIME: CONTAINER DEBIAN
 cd docker -and build.sh -and deploy.sh \
@@ -39,7 +39,7 @@ python run.py -a plugins.nanome.ai -p 9999 -r -v \
 --knime_path=C:\KNIME\knime.exe \
 --preferences_path=$env:USERPROFILE\Github\plugin-knime-docking\knime-workspace\preferences.epf
 
-# HOST: DEBIAN
+# HOST: DEBIAN (Dev)
 # PLUGIN: CONTAINER DEBIAN
 # KNIME: CONTAINER DEBIAN
 # Development (debian container with X11)
