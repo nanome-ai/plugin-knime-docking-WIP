@@ -53,15 +53,7 @@ $ python run.py -a plugins.nanome.ai -p 9999 -v --wkflw_dir=C:\Users\Administrat
 
 ### Docker Usage
 
-This section of the readme is incomplete. Please check back later.
-
-To run KNIME-Docking in a Docker container:
-
-```sh
-$ cd docker
-$ ./build.sh
-$ ./deploy.sh --wkflw_dir "C:/path/to/your/workflow/directory" --grid_dir "C:/path/to/your/docking/grids" --knime_path "C:/KNIME/knime.exe" --output_dir "C:/path/to/your/output/directory" --preferences_dir "C:/path/to/your/preferences/directory" -a plugins.nanome.ai -p 9999
-```
+Please refer to run_commands.txt to best match the environment you would like to run this plugin in.
 
 ### Development
 This section of the readme is incomplete. Please check back later.

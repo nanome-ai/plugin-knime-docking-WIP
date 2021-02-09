@@ -1,3 +1,7 @@
+HOST: What is the plugin running on (windows or debian)?
+PLUGIN: How is the plugin running? (either on the host or in a container)
+KNIME: Where is the knime executable (windows, debian or container)
+
 # HOST: DEBIAN
 # PLUGIN: CONTAINER DEBIAN
 # KNIME: HOST DEBIAN
