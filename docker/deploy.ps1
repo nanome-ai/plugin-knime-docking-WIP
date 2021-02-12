@@ -1,4 +1,6 @@
-$volumeID = docker ps -aqf nanome-knime-windows
+param($wkflw_dir, $grid_dir, $knime_path, $output_dir, $preferences_dir)
+
+$volumeID = docker ps -aqf name=nanome-knime-windows
 if ($volumeID -ne "") {
     Write-Host "Removing previous container"
 
@@ -6,17 +8,13 @@ if ($volumeID -ne "") {
     docker rm -f nanome-knime-windows
 }
 
-param ($wkflw_dir, $grid_dir, $knime_path, $output_dir, $preferences_dir)
-$mounts = ""
 
-foreach($mount in $PSBoundParameters.GetEnumerator()) {
-       $mounts += "
---mount type=bind,source=$($mount.Value),target=$($mount.Value) \"
+$mounts = ""
+foreach ($mount in $PSBoundParameters.GetEnumerator()) {
+    $mounts += "--mount type=bind,source=`"$($mount.Value)`",target=$($mount.Value) "
 }
 
-docker run -d \
---memory=10g \
---name nanome-knime-windows \
---restart unless-stopped $mounts \
--e ARGS="$args" \
+Write-Host $mounts
+
+docker run -d --memory=10g --name nanome-knime-windows --restart unless-stopped $mounts -e ARGS="$args" nanome-knime-windows
 
