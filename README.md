@@ -44,9 +44,9 @@ To install KNIME-Docking:
 ```sh
 $ python run.py -a plugins.nanome.ai -p 9999 -v --wkflw_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\knime-workflow --grid_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\docking_grids --output_dir=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\data\sdf_test --knime_path=C:\KNIME\knime.exe --preferences_path=C:\Users\Administrator\Github\plugin-knime-docking\knime-workspace\preferences.epf
 ```
-- All options are required:
+- All flags are required:
 - `wkflw_dir` is the directory to your workflow. By default, there is one located in ${repo}/knime-workspace
-- `grid_dir` is the directory to your KNIME grid files. By default, theree is one located in ${repo}/knime-workspace
+- `grid_dir` is the directory to your KNIME grid files. By default, there is one located in ${repo}/knime-workspace
 - `output_dir` is the directory you want the output of your workflow to be saved to
 - `knime_path` is the path to your knime executable (should be C:\KNIME\knime.exe if you followed these directions)
 - `preferences_path` is (above) where you exported your KNIME preferences to

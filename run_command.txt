@@ -9,20 +9,14 @@ cd docker && ./build.sh && ./deploy.sh -a plugins.nanome.ai -p 9999 -r -v \
 --wkflw_dir /workspaces/plugin-knime-docking/knime-workspace/knime-workflow \
 --grid_dir /workspaces/plugin-knime-docking/knime-workspace/docking_grids \
 --output_dir /workspaces/plugin-knime-docking/knime-workspace/data/sdf_test \
---knime_path /workspaces/plugin-knime-docking/knime/knime \
---preferences_path /workspaces/plugin-knime-docking/knime-workspace/preferences.epf
+--knime_path /workspaces/plugin-knime-docking/knime/knime
 cd ..
 
 # HOST: WINDOWS (Dev)
 # PLUGIN: CONTAINER DEBIAN
 # KNIME: CONTAINER DEBIAN
 cd docker
-build.sh -and deploy.sh -a plugins.nanome.ai -p 9999 -r -v \
---wkflw_dir /workspaces/plugin-knime-docking/knime-workspace/knime-workflow \
---grid_dir /workspaces/plugin-knime-docking/knime-workspace/docking_grids \
---output_dir /workspaces/plugin-knime-docking/knime-workspace/data/sdf_test \
---knime_path /workspaces/plugin-knime-docking/knime/knime \
---preferences_path /workspaces/plugin-knime-docking/knime-workspace/preferences.epf
+build.ps1 -and deploy.ps1 -a plugin_server -p server_port -wkflw_dir $HOME\Desktop\Nanome\plugin-knime-docking\knime-workspace\knime-workflow -grid_dir $HOME\Desktop\Nanome\plugin-knime-docking\knime-workspace\docking_grids -output_dir $HOME\Desktop\Nanome\plugin-knime-docking\knime-workspace\data\sdf_test -knime_path $HOME\Desktop\Nanome\plugin-knime-docking\knime-workspace\knime\knime
 
 # HOST: WINDOWS
 # PLUGIN: CONTAINER WINDOWS
@@ -32,8 +26,7 @@ cd docker -and build.ps1 -and deploy.ps1 \
 --wkflw_dir "$env:USERPROFILE/Desktop/Nanome/plugin-knime-docking/knime-workspace/knime-workflow" \
 --grid_dir "$env:USERPROFILE/Desktop/Nanome/plugin-knime-docking/knime-workspace/docking_grids" \
 --knime_path "C:/KNIME/knime.exe" \
---output_dir "C:\Users\Admin\Desktop\Nanome\plugin-knime-docking\knime-workspace\data\sdf_test" \
---preferences_dir "C:\Users\Admin\Desktop\Nanome\plugin-knime-docking\knime-workspace"
+--output_dir "C:\Users\Admin\Desktop\Nanome\plugin-knime-docking\knime-workspace\data\sdf_test"
 
 # HOST: WINDOWS
 # PLUGIN: HOST WINDOWS
@@ -42,8 +35,7 @@ python run.py -a plugins.nanome.ai -p 9999 -r -v \
 --wkflw_dir $env:USERPROFILE\Github\plugin-knime-docking\knime-workspace\knime-workflow \
 --grid_dir $env:USERPROFILE\Github\plugin-knime-docking\knime-workspace\docking_grids \
 --output_dir $env:USERPROFILE\Github\plugin-knime-docking\knime-workspace\data\sdf_test \
---knime_path C:\KNIME\knime.exe \
---preferences_path $env:USERPROFILE\Github\plugin-knime-docking\knime-workspace\preferences.epf
+--knime_path C:\KNIME\knime.exe
 
 # HOST: DEBIAN (Dev native)
 # PLUGIN: HOST DEBIAN
@@ -53,5 +45,4 @@ python3 run.py -a plugins.nanome.ai -p 9999 -r -v \
 --wkflw_dir /workspaces/plugin-knime-docking/knime-workspace/knime-workflow \
 --grid_dir /workspaces/plugin-knime-docking/knime-workspace/docking_grids \
 --output_dir /workspaces/plugin-knime-docking/knime-workspace/data/sdf_test \
---knime_path /workspaces/plugin-knime-docking/knime/knime \
---preferences_path /workspaces/plugin-knime-docking/knime-workspace/preferences.epf
+--knime_path /workspaces/plugin-knime-docking/knime/knime

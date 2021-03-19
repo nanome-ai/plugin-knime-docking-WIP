@@ -36,13 +36,7 @@ RUN echo xfce4-session > ~/.xsession
 
 # Install xterm (& wget & default-jre) for graphical applications (Knime)
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get -y install --no-install-recommends xterm wget default-jre libswt-glx-gtk-4-jni python3-pip
-
-# Install miniconda
-RUN wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh && \
-    chmod +x ./miniconda.sh && \
-    ./miniconda.sh -b && \
-    rm ./miniconda.sh
+    && apt-get -y install --no-install-recommends --fix-missing xterm wget default-jre libswt-glx-gtk-4-jni python3-pip
 
 # Install nanome-lib
 RUN pip3 install setuptools
