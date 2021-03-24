@@ -1,25 +1,60 @@
-param($wkflw_dir, $grid_dir, $knime_path, $output_dir)
+param($wkflw_dir, $grid_dir, $output_dir, $preferences_dir)
 
-Set-Variable -name OS -value debian
-Set-Variable -name volumeID -value "docker ps -aqf name=nanome-knime-$((Get-Variable -name OS).value)"
+$OS = "debian"
+$containerName = "nanome-knime-$OS"
+$containerID = $(Invoke-Expression -Command "docker ps -aqf name=nanome-knime-$OS")
 
-if ($(Invoke-Expression -Command $((Get-Variable -name volumeID).value)) -ne $null) {
+if ($null -ne $containerID) {
     Write-Host "Removing previous container"
-    docker stop -t0 "nanome-knime-$((Get-Variable -name OS).value)"
-    docker rm -f "nanome-knime-$((Get-Variable -name OS).value)"
+    docker stop -t0 $containerName
+    docker rm -f $containerName
 }
 
-$mountargs = '', '', '', '', '', '', '', ''
+$exists = @{}
+$mountargs = @('', '', '', '', '', '', '', '')
 $mountcount = 0
-$mounts = $wkflw_dir, $grid_dir, $knime_path, $output_dir
-foreach ($mount in $mounts.GetEnumerator()) {
+$unixmounts = @()
+foreach ($mount in $PSBoundParameters.GetEnumerator()) {
     Write-Host mount is $mount
-    $mountargs[$mountcount] = "--mount"
-    $unixpath = "/app/mounts/$($mount.Split("\")[-1])"
-    $mountargs[$mountcount+1] = "source=$($mount),target=$($unixpath),type=bind"
-    $mountcount += 2
+    $mountname = $mount.Key
+    $localpath = $mount.Value
+    $mountargs[2 * $mountcount] = "--mount"
+    $unixpath = "/app/mounts/$($localpath.Split("\")[-1])"
+    $mountargs[$(2 * $mountcount) + 1] = "source=$($localpath),target=$($unixpath),type=bind"
+    $mountcount += 1
+
+    if (-Not $exists.ContainsKey($localpath)) {
+        $unixmounts += "--$mountname"
+        $unixmounts += $unixpath
+        $exists[$localpath] = $true
+    }
 }
 
-Write-Host @mountargs
+$unixargs = ''
+foreach ($arg in $args.GetEnumerator()) {
+    Write-Host "<ARG>" $arg "</ARG>"
+    $unixargs += "-$($arg.Replace('=', ' ')) "
+}
 
-docker run @mountargs -d --memory=10g --name "nanome-knime-$((Get-Variable -name OS).value)" --restart unless-stopped -e ARGS="$args" "nanome-knime-$((Get-Variable -name OS).value)"
+Write-Host unixargs are $unixargs
+Write-Host mount args are @mountargs
+Write-Host unixmounts are $unixmounts
+Write-Host "args are $args"
+
+docker run --init @mountargs -d --memory=10g --name $containerName --restart unless-stopped -e ARGS="$unixmounts $unixargs" $containerName
+
+$redeploy = @"
+`$OS = `"debian`"
+`$containerName = `"nanome-knime-`$OS`"
+`$containerID = `$(Invoke-Expression -Command `"docker ps -aqf name=nanome-knime-`$OS`")
+
+if (`$null -ne `$containerID) {
+    Write-Host `"Removing previous container`"
+    docker stop -t0 `$containerName
+    docker rm -f `$containerName
+}
+
+docker run --init $mountargs -d --memory=10g --name `$containerName --restart unless-stopped -e ARGS=`"$unixmounts $unixargs`" `$containerName
+"@
+
+Set-Content -Path redeploy.ps1 -Value $redeploy

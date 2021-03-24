@@ -9,7 +9,6 @@ fi
 docker_args=(
 "wkflw_dir"
 "grid_dir"
-"knime_path"
 "output_dir"
 "preferences_dir"
 )

@@ -1,8 +1,8 @@
-#Wed Mar 24 00:52:42 UTC 2021
+#Tue Feb 02 19:53:49 UTC 2021
 \!/=
 /configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
 /configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=10
-/configuration/org.eclipse.ui.ide/RECENT_WORKSPACES=/root/knime-workspace
+/configuration/org.eclipse.ui.ide/RECENT_WORKSPACES=/workspaces/plugin-knime-docking/knime-workspace\n/home/vscode/knime-workspace
 /configuration/org.eclipse.ui.ide/RECENT_WORKSPACES_PROTOCOL=3
 /configuration/org.eclipse.ui.ide/SHOW_RECENT_WORKSPACES=false
 /configuration/org.eclipse.ui.ide/SHOW_WORKSPACE_SELECTION_DIALOG=true
@@ -11,15 +11,16 @@
 /instance/org.eclipse.e4.ui.css.swt.theme/themeid=org.knime.product.theme.knime
 /instance/org.eclipse.ui.browser/browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="-1"/>
 /instance/org.eclipse.ui.workbench//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
-/instance/org.knime.python2/condaDirectoryPath=/opt/conda
+/instance/org.knime.python2/condaDirectoryPath=/home/vscode/miniconda3
 /instance/org.knime.python2/defaultPythonOption=python3
-/instance/org.knime.python2/python2CondaEnvironmentDirectoryPath=/opt/conda
+/instance/org.knime.python2/python2CondaEnvironmentDirectoryPath=/home/vscode/miniconda3
 /instance/org.knime.python2/python2Path=python
-/instance/org.knime.python2/python3CondaEnvironmentDirectoryPath=/opt/conda
+/instance/org.knime.python2/python3CondaEnvironmentDirectoryPath=/home/vscode/miniconda3/envs/py3_knime
 /instance/org.knime.python2/python3Path=python3
 /instance/org.knime.python2/pythonEnvironmentType=conda
 /instance/org.knime.python2/serializerId=org.knime.serialization.flatbuffers.column
 /instance/org.knime.workbench.core/knime.askedToSendStatistics=true
+/instance/org.knime.workbench.core/knime.sendAnonymousStatistics=true
 /instance/org.knime.workbench.core/knime.workspace.version=20190627
 /instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/active=true
 /instance/org.knime.workbench.explorer.view/mountpointNode/EXAMPLES/defaultMountID=EXAMPLES
@@ -48,7 +49,7 @@
 @org.eclipse.e4.ui.css.swt.theme=0.12.600.v20200124-0005
 @org.eclipse.ui.browser=3.6.700.v20200217-0820
 @org.eclipse.ui.workbench=3.118.0.v20200222-0719
-@org.knime.python2=4.3.2.v202103021016
+@org.knime.python2=4.3.1.v202101261634
 @org.knime.workbench.core=4.3.0.v202011212015
 @org.knime.workbench.explorer.view=8.7.1.v202101261634
 file_export_version=3.0

@@ -8,4 +8,4 @@ if ($u -or $update) {
 }
 
 $cachebust = Get-Content -Path .\.cachebust
-docker build -f "$((Get-Variable -name OS).value).Dockerfile" --build-arg CACHEBUST=$cachebust -t "nanome-knime-$((Get-Variable -name OS).value):latest" ..
+docker build --no-cache -f "$((Get-Variable -name OS).value).Dockerfile" --build-arg CACHEBUST=$cachebust -t "nanome-knime-$((Get-Variable -name OS).value):latest" ..

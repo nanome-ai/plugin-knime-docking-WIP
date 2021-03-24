@@ -1,7 +1,8 @@
 import subprocess
 from nanome.util import Logs
 import nanome
-import os
+from os import listdir
+from os.path import join as pathjoin
 import shutil
 
 
@@ -14,22 +15,22 @@ class knime_runner():
 
     def run_knime(self):
         ## VARIABLES FOR KNIME RUN ##
-        # must enter the path to computer's knime.exe file below
-        knime_exe = os.path.abspath(self._plugin._knime_path)
-        BATCH = "org.knime.product.KNIME_BATCH_APPLICATION"
-        workflowDir = r'-workflowDir="{}"'.format(self._plugin._workflow_dir)
-        preferences = r'-preferences="{}"'.format(os.path.join(self._plugin._preferences_dir, 'preferences.epf'))
-        input_folder = r'-workflow.variable=input_folder,"{}",String'.format(
-            self._plugin._input_directory.name)
-        grid_dir = r'-workflow.variable=grid_dir,"{}",String'.format(
-            self._plugin._grid_dir)
-        Logs.debug('input_folder arg:', input_folder)
-        output_folder = r'-workflow.variable=output_folder,"{}",String'.format(
-            self._plugin._output_directory.name)
-        Logs.debug('output_folder arg:', output_folder)
+        # must enter the path to computer's knime executable below
+        knime_exe = pathjoin(self._plugin._knime_dir, 'knime')
+        input_folder = self._plugin._input_directory.name
+        output_folder = self._plugin._output_directory.name
+        batch_arg = "org.knime.product.KNIME_BATCH_APPLICATION"
+        grid_dir_arg = f'-workflow.variable=grid_dir,"{self._plugin._grid_dir}",String'
+        workflowDir_arg = f'-workflowDir="{self._plugin._workflow_dir}"'
+        preferences = pathjoin(self._plugin._preferences_dir, 'preferences.epf')
+        preferences_arg = f'-preferences="{preferences}"'
+        input_folder_arg = f'-workflow.variable=input_folder,"{input_folder}",String'
+        output_folder_arg = f'-workflow.variable=output_folder,"{output_folder}",String'
+        Logs.debug('input_folder arg:', input_folder_arg)
+        Logs.debug('output_folder arg:', output_folder_arg)
         # bashCommand = [knime_exe, "-nosave", "-consoleLog", "-reset", "-nosplash", "-application", BATCH, workflowDir, preferences, input_folder, output_folder]
         bashCommand = [knime_exe, "-nosave", "-reset", "-nosplash", "-application",
-                       BATCH, grid_dir, workflowDir, preferences, input_folder, output_folder]
+                       batch_arg, grid_dir_arg, workflowDir_arg, preferences_arg, input_folder_arg, output_folder_arg]
         bC = ' '.join(bashCommand)
 
         self._knime_process = subprocess.Popen(bC, shell=True)
@@ -57,11 +58,11 @@ class knime_runner():
     def _workflow_finished(self):
         self.workflow_results = []
         ligand = True
-        for item in os.listdir(self._plugin._output_directory.name):
+        for item in listdir(self._plugin._output_directory.name):
             if item.lower().endswith('.sdf') and ligand:
-                source = os.path.join(
+                source = pathjoin(
                     self._plugin._output_directory.name, item)
-                destination = os.path.join(self._plugin._save_location, item)
+                destination = pathjoin(self._plugin._save_location, item)
                 if self._plugin._save_location:
                     shutil.copyfile(source, destination)
                 self._structure = nanome.structure.Complex.io.from_sdf(

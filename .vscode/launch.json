@@ -12,7 +12,6 @@
             "args": ["-a", "plugins.nanome.ai", "-p", "9999", "-v", "-r", "--wkflw_dir=C:\\Users\\Admin\\Desktop\\Nanome\\plugin-knime-docking\\knime-workspace\\knime-workflow ",
                 "--grid_dir=C:\\Users\\Admin\\Desktop\\Nanome\\plugin-knime-docking\\knime-workspace\\docking_grids ",
                 "--output_dir=C:\\Users\\Admin\\Desktop\\Nanome\\plugin-knime-docking\\knime-workspace\\data\\sdf_test ",
-                "--knime_path=\"C:\\Program Files\\Schrodinger2019-4\\knime.exe\" ",
                 "--preferences_path=C:\\Users\\Admin\\Desktop\\Nanome\\plugin-knime-docking\\knime-workspace\\preferences.epf"],
             "console": "integratedTerminal"
         }

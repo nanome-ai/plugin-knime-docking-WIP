@@ -51,7 +51,7 @@ RUN tar -xzf ./knime.tar.gz && \
     rm -f ./knime.tar.gz && \
     cd $(ls) && \
     mkdir --parents ../../knime && \
-    mv ./* $_
+    mv ./* ../../knime
 # remove installation directory
 WORKDIR /workspaces/plugin-knime-docking/
 RUN rm -rf ./knime_install
