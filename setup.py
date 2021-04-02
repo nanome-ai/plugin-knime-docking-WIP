@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 README = (pathlib.Path(__file__).parent / 'README.md').read_text()
 
 setup(
-    name='nanome-knime-removehs-poc',
+    name='nanome-knime',
     packages=find_packages(),
     version='0.1.0',
     license='MIT',
@@ -17,7 +17,7 @@ setup(
     platforms='any',
     keywords=['virtual-reality', 'chemistry', 'python', 'api', 'plugin'],
     install_requires=['nanome'],
-    entry_points={'console_scripts': ['nanome-knime-removehs-poc = nanome_knime_removehs_poc.KNIME_removeHs_POC:main']},
+    entry_points={'console_scripts': ['nanome-knime = nanome_knime.KnimePlugin:main']},
     classifiers=[
         # 'Development Status :: 3 - Alpha',
 
@@ -33,6 +33,6 @@ setup(
         'Programming Language :: Python :: 3.8',
     ],
     package_data={
-        'nanome_knime_removehs_poc': []
+        'nanome_knime': []
     },
 )

@@ -1,2 +1,3 @@
 *.log
 knime/
+**/__pycache__/

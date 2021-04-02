@@ -1,4 +1,4 @@
-from nanome_knime_removehs_poc import KNIME_removeHs_POC
+from nanome_knime import KnimePlugin
 
 if __name__ == '__main__':
-    KNIME_removeHs_POC.main()
+    KnimePlugin.main()
